@@ -1,0 +1,57 @@
+.contenedor-imagen-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.imagen-inicio {
+    width: 30%;
+    height: 300px;
+    
+}
+
+.lista-zapatillas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    gap: 80px; 
+}
+
+.caja-zapatillas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.caja-zapatillas img {
+    width: 100%; 
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+
+.caja-zapatillas p {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+
+.colaboraciones {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #AD8A1F;
+}
