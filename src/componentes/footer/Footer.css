@@ -1,0 +1,21 @@
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3d3d3;
+  color: #AD8A1F; 
+  padding: 20px;
+}
+
+.footer-seccion {
+  flex: 1;
+}
+
+
+
+
