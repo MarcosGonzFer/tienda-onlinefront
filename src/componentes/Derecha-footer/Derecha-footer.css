@@ -1,0 +1,30 @@
+
+.zona-derecha ul {
+  list-style: none;
+  padding: 0;
+}
+
+.zona-derecha ul li {
+  margin-bottom: 10px;
+}
+
+
+.zona-derecha ul li a {
+  text-decoration: none;
+  color: #AD8A1F;
+}
+
+.redes-sociales a {
+  color: #AD8A1F;
+  font-size: 1.5em;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.redes-sociales a img{
+  display: inline-block; 
+  width: 30px; 
+  height: 30x; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 0 5px; 
+}

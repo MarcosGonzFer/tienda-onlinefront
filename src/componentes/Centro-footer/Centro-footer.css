@@ -1,0 +1,32 @@
+.zona-centro {
+    text-align: center;
+  }
+  
+  .zona-centro p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .Correo {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .Correo input {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+  
+  .Correo button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #AD8A1F;
+    cursor: pointer;
+    margin-left: 100px;
+  }
