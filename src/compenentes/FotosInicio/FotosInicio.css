@@ -1,0 +1,12 @@
+.contenedor-imagen-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .imagen-inicio {
+    width: 30%;
+    height: 300px;
+  }
