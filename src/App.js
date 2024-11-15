@@ -5,8 +5,9 @@ import Section from './compenentes/section/Section';
 function App() {
   return (
     <div className="App">
-     <Footer/>
+     
       <Section/>
+      <Footer/>
     </div>
   );
 }
