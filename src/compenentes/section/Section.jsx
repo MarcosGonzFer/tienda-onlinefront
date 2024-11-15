@@ -1,17 +1,13 @@
 import React from 'react';
 import './Section.css';
+import FotosInicio from '../FotosInicio/FotosInicio';
 
 function Section() {
   return (
     <div>
-      {/* Imagen de inicio */}
-      <div className='contenedor-imagen-inicio'>
-        <img src="imagenes/fotozapasinicio.jpg" alt="imagen de la foto de inicio" className='imagen-inicio' />
-        <img src="imagenes/fotozapasinicio2.jpg" alt="imagen de la foto de inicio" className='imagen-inicio' />
-        <img src="imagenes/fotozapasinicio3.jpg" alt="imagen de la foto de inicio" className='imagen-inicio' />
-      </div>
+    
+    <FotosInicio/> 
 
-      {/* Lista de zapatillas */}
       <div className='lista-zapatillas'>
         <div className='caja-zapatillas'>
           <img src="imagenes/louisvuitton.png" alt="Louis Vuitton" />
@@ -46,25 +42,24 @@ function Section() {
           <p>Gucci</p>
         </div>
 
-
-        {/* Título de colaboraciones */}
+        <div className='lista-zapatillas-colaboraciones'>
         <div className='colaboraciones'>
-          <h2>COLABORACIONES</h2>
+          <h1>COLABORACIONES</h1>
         </div>
 
-        {/* Colaboraciones */}
-        <div className='caja-zapatillas'>
+        <div className='caja-zapatillas-colaboraciones'>
           <img src="imagenes/nike_offwhite.png" alt="Nike x Off-White" />
-          <p>Nike x Off-White</p>
+          <h2>Nike x Off-White</h2>
         </div>
-        <div className='caja-zapatillas'>
+        <div className='caja-zapatillas-colaboraciones'>
           <img src="imagenes/adidas_badbunny.png" alt="Adidas Campus Bad Bunny" />
-          <p>Adidas Campus Bad Bunny</p>
+          <h2>Adidas Campus Bad Bunny</h2>
         </div>
-        <div className='caja-zapatillas'>
+        <div className='caja-zapatillas-colaboraciones'>
           <img src="imagenes/nike_travisscott.png" alt="Nike x Travis Scott" />
-          <p>Nike x Travis Scott</p>
+          <h2>Nike x Travis Scott</h2>
         </div>
+      </div>
       </div>
     </div>
   );
