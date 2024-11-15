@@ -19,12 +19,12 @@
   font-size: 1.5em;
   margin-right: 15px;
   text-decoration: none;
-}
-.redes-sociales a img{
   display: inline-block; 
-  width: 30px; 
-  height: 30x; 
+  width: 40px; 
+  height: 60px; 
   background-size: cover; 
   background-repeat: no-repeat; 
   margin: 0 5px; 
+  margin-inline: 6px;
+  margin-top: 20px;
 }
