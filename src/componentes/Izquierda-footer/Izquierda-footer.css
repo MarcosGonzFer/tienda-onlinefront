@@ -1,0 +1,14 @@
+.zona-izquierda ul {
+  list-style: none;
+  padding: 0;
+}
+
+.zona-izquierda ul li{
+  margin-bottom: 10px;
+}
+
+
+.zona-izquierda ul li a {
+  text-decoration: none;
+  color: #AD8A1F;
+}
