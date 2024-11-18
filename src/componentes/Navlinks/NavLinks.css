@@ -1,0 +1,22 @@
+.contenedor-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ad8a1f;
+  padding: 10px 20px;
+   
+}
+
+.contenedor-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right:  150px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contenedor-nav a:hover {
+  color: black;
+  text-decoration: none;
+}
