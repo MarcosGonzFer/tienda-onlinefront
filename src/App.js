@@ -1,8 +1,8 @@
 
 import './App.css';
-import Footer from './componentes/footer/Footer';
-import Section from './compenentes/section/Section';
-import Nav from './componentes/nav/Nav.jsx';
+import Footer from './componentes/Footer/Footer.jsx';
+import Section from './componentes/section/Section.jsx';
+import Nav from './componentes/Nav/Nav.jsx';
 function App() {
   return (
     <div className="App">
