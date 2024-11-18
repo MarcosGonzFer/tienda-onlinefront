@@ -1,9 +1,12 @@
 import React from 'react'
 import './Nav.css'
+import Navlinks from '../Navlinks/NavLinks'
 
-function nav() {
+function Nav() {
   return (
-    <div>nav</div>
+      <div>
+        <Navlinks/>
+      </div>
   )
 }
 
