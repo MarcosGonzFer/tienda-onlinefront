@@ -1,0 +1,14 @@
+.navStyle {
+  display: flex;
+  gap: 20px;
+}
+.linkStyle {
+  color: #ad8a1f;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.linkStyle:hover {
+  color: #daae29;
+}
