@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ad8a1f;
+  background-color: black;
   padding: 10px 20px;
    
 }
@@ -17,6 +17,6 @@
 }
 
 .contenedor-nav a:hover {
-  color: black;
+  color: #ad8a1f;
   text-decoration: none;
 }
