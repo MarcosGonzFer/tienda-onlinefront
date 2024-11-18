@@ -1,5 +1,6 @@
 import React from "react";
 import './Links.css'
+import CarritoIcono from "../carritoIcono/CarritoIcono";
 
 function Links() {
   return (
@@ -16,6 +17,7 @@ function Links() {
       <a href="#" className="linkStyle">
         Log-in
       </a>
+      <CarritoIcono />
     </div>
   );
 }
