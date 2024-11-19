@@ -1,6 +1,6 @@
 import React from "react";
 import './Links.css'
-import CarritoIcono from "../carritoIcono/CarritoIcono";
+import CarritoIcono from "../CarritoIcono/CarritoIcono";
 
 function Links() {
   return (
