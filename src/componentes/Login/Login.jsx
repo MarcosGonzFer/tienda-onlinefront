@@ -7,6 +7,7 @@ import { FaApple } from "react-icons/fa6";;
 function Login() {
   return (
 <div className="login-container">
+      <button className='registrarse'>Registrar</button>
       <form className="login-formulario">
         <h2>Iniciar Sesión</h2>
         <div className="formulario-grupos">

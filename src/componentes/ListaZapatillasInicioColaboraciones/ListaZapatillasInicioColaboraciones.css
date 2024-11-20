@@ -21,6 +21,7 @@
     align-items: center;
     width: 350px;
     box-sizing: border-box;
+    cursor: pointer;
   }
   
   .caja-zapatillas-colaboraciones img {
