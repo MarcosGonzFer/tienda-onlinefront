@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './componentes/Home/Home';
 import Login from './componentes/Login/Login';
+import PerdidaContraseña from './componentes/PerdidaContraseña/PerdidaContraseña';
 import Registro from './componentes/Registro/Registro';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Home/>
       <Login/>
       <Registro/>
+      <PerdidaContraseña/>
     </div>
   );
 }
