@@ -1,5 +1,6 @@
 import React from 'react'
 import './Registro.css'
+import { Link } from "react-router-dom"; 
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa6";;
@@ -7,7 +8,9 @@ import { FaApple } from "react-icons/fa6";;
 function Login() {
   return (
 <div className="login-container">
-      <button className='login'>Iniciar Sesion</button>
+      <Link to="/Login">
+        <button className='login'>Iniciar Sesion</button>
+      </Link>
       <form className="login-formulario">
         <h2>Crear Cuenta</h2>
         <div className="formulario-grupos">

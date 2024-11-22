@@ -1,24 +1,26 @@
 import React from "react";
-import './Links.css'
+import { Link } from "react-router-dom"; 
+import './Links.css';
 import CarritoIcono from "../CarritoIcono/CarritoIcono";
 
 function Links() {
   return (
     <div className="navStyle">
-      <a href="#" className="linkStyle">
+      <Link to="/Ofertas" className="linkStyle">
         Ofertas
-      </a>
-      <a href="#" className="linkStyle">
+      </Link>
+      <Link to="/tienda" className="linkStyle">
         Tienda
-      </a>
-      <a href="#" className="linkStyle">
+      </Link>
+      <Link to="/ayuda" className="linkStyle">
         Ayuda
-      </a>
-      <a href="#" className="linkStyle">
+      </Link>
+      <Link to="/Login" className="linkStyle">
         Log-in
-      </a>
+      </Link>
       <CarritoIcono />
     </div>
   );
 }
+
 export default Links;
