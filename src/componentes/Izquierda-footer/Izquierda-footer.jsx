@@ -1,14 +1,40 @@
 import React from 'react'
-   import './Izquierda-footer.css'
+ import './Izquierda-footer.css'
+ import { Link } from "react-router-dom"; 
 function Izquierda() {
   return (
     <div className="zona-izquierda">
     <ul>
-      <li><a className='Nosotros' href="#">Sobre Nosotros</a></li>
-      <li><a className='Ayuda'   href="#">Ayuda</a></li>
-      <li><a className='Colaboraciones' href="#">Colaboraciones</a></li>
-      <li><a className='Tienda'  href="#">Tienda</a></li>
-      <li><a className='Contacto'  href="#">Contacto</a></li>
+    <div className="zona-izquierda">
+  <ul>
+    <li>
+      <Link to="/SobreNosotros">
+        <button className="sobrenosotros-footer">Sobre Nosotros</button>
+      </Link>
+    </li>
+    <li>
+      <Link to="/Ayuda">
+        <button className="ayuda-footer">Ayuda</button>
+      </Link>
+    </li>
+    <li>
+      <Link to="/Colaboraciones">
+        <button className="colaboraciones-footer">Colaboraciones</button>
+      </Link>
+    </li>
+    <li>
+      <Link to="/Tienda">
+        <button className="tienda-footer">Tienda</button>
+      </Link>
+    </li>
+    <li>
+      <Link to="/Contacto">
+        <button className="contacto-footer">Contacto</button>
+      </Link>
+    </li>
+  </ul>
+</div>
+
     </ul>
     </div>
   )

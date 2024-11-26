@@ -4,6 +4,7 @@ import Login from './componentes/Login/Login';
 import PerdidaContraseña from './componentes/PerdidaContraseña/PerdidaContraseña';
 import Registro from './componentes/Registro/Registro';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SobreNosotros from './componentes/SobreNosotros/SobreNosotros';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Registro" element={<Registro />} />
           <Route path="/Perdidacontraseña" element={<PerdidaContraseña />} />
+          <Route path="/SobreNosotros" element={<SobreNosotros/>} />
         </Routes>
       </div>
     </Router>
