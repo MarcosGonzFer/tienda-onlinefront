@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
-import './Links.css';
+import { Link } from "react-router-dom";
+import "./Links.css";
 import CarritoIcono from "../CarritoIcono/CarritoIcono";
 
 function Links() {
@@ -18,7 +18,9 @@ function Links() {
       <Link to="/Login" className="linkStyle">
         Log-in
       </Link>
-      <CarritoIcono />
+      <Link to="/Compra">
+        <CarritoIcono />
+      </Link>
     </div>
   );
 }
