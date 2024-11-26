@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 function NavLinks() {
   return (
     <div className='contenedor-nav'>
-      <Link to="/marcas">Marcas</Link>
-      <Link to="/hombres">Hombres</Link>
-      <Link to="/mujeres">Mujeres</Link>
-      <Link to="/zapatillas">Zapatillas</Link>
+      <Link to="/Marcas">Marcas</Link>
+      <Link to="/Hombres">Hombres</Link>
+      <Link to="/Mujeres">Mujeres</Link>
+      <Link to="/Zapatillas">Zapatillas</Link>
       <NavBuscador />
     </div>
   );
