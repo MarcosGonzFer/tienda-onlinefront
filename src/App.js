@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SobreNosotros from './componentes/SobreNosotros/SobreNosotros';
 import Colaboraciones from './componentes/Colaboraciones/Colaboraciones';
 import Contacto from './componentes/Contacto/Contacto';
+import PoliticaCookies from './componentes/PoliticaCookies/PoliticaCookies';
+import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/SobreNosotros" element={<SobreNosotros/>} />
           <Route path="/Colaboraciones" element={<Colaboraciones/>} />
           <Route path="/Contacto" element={<Contacto/>} />
+          <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
+          <Route path="/AvisoLegal" element={<AvisoLegal/>} />
         </Routes>
       </div>
     </Router>

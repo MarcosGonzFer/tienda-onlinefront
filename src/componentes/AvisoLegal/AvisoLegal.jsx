@@ -1,18 +1,17 @@
 import React from 'react'
-import './Contacto.css'
+import './AvisoLegal'
 import Header from '../Header/Header'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
-
-function Contacto() {
+function AvisoLegal() {
   return (
     <div>
         <Header/>
         <Nav/>
-        <h1>Estas en el apartado Contacto</h1>
+        <h1>Estas en aviso legal</h1>
         <Footer/>
     </div>
   )
 }
 
-export default Contacto
+export default AvisoLegal

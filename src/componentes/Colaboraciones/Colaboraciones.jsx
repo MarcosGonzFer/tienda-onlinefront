@@ -8,6 +8,7 @@ function Colaboraciones() {
     <div>
         <Header/>
         <Nav/>
+        <h1>Estas en colaboraciones</h1>
         <Footer/>
     </div>
   )

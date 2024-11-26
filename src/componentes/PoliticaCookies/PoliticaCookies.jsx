@@ -1,18 +1,18 @@
 import React from 'react'
-import './Contacto.css'
+import './PoliticaCookies'
 import Header from '../Header/Header'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 
-function Contacto() {
+function PoliticaCookies() {
   return (
     <div>
         <Header/>
         <Nav/>
-        <h1>Estas en el apartado Contacto</h1>
+        <h1>Estas en PoliticaCookies</h1>
         <Footer/>
     </div>
   )
 }
 
-export default Contacto
+export default PoliticaCookies
