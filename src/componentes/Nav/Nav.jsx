@@ -8,6 +8,6 @@ function Nav() {
         <Navlinks/>
       </div>
   )
-}
+} 
 
 export default Nav
