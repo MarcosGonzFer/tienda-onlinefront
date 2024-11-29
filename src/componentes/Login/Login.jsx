@@ -1,6 +1,6 @@
 import React from 'react'
 import './Login.css'
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa6";;
