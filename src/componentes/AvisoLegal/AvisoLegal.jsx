@@ -8,7 +8,6 @@ function AvisoLegal() {
     <div>
         <Header/>
         <Nav/>
-
         <section className="aviso-legal">
           <h1 className="titulo-aviso-legal">Aviso Legal</h1>
           <p className="parrafo-aviso-legal">
