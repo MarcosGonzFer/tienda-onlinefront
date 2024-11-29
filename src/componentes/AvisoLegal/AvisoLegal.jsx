@@ -8,7 +8,7 @@ function AvisoLegal() {
     <div>
         <Header/>
         <Nav/>
-        <main className='avisoLegal'>
+
         <section className="aviso-legal">
           <h1 className="titulo-aviso-legal">Aviso Legal</h1>
           <p className="parrafo-aviso-legal">
@@ -135,7 +135,7 @@ function AvisoLegal() {
               social del Responsable del sitio web.
           </p>
         </section>
-      </main>
+
         <Footer/>
     </div>
   )

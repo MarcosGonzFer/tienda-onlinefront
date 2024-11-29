@@ -8,7 +8,7 @@ function SobreNosotros() {
     <div>
       <Header />
       <Nav />
-      <main className='main-sobrenosotros'>
+
         <section className="sobre-nosotros">
           <h1 className="titulo-sobre-nosotros">Sobre Nosotros</h1>
           <p className="parrafo-sobre-nosotros">
@@ -54,7 +54,7 @@ function SobreNosotros() {
           </p>
           <p className="parrafo-sobre-nosotros">¡Gracias por acompañarnos en esta aventura!</p>
         </section>
-      </main>
+
       <Footer />
     </div>
   )
