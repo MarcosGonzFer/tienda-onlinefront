@@ -9,10 +9,10 @@ function Links() {
       <Link to="/Ofertas" className="linkStyle">
         Ofertas
       </Link>
-      <Link to="/tienda" className="linkStyle">
+      <Link to="/Tienda" className="linkStyle">
         Tienda
       </Link>
-      <Link to="/ayuda" className="linkStyle">
+      <Link to="/Ayuda" className="linkStyle">
         Ayuda
       </Link>
       <Link to="/Login" className="linkStyle">
