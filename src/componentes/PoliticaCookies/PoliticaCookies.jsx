@@ -9,7 +9,7 @@ function PoliticaCookies() {
     <div>
         <Header/>
         <Nav/>
-        <main className='main-cookies'>
+
       <section className="politica-cookies">
         <h1 className="titulo-politica-cookies">Política de Privacidad</h1>
         <p className="parrafo-politica-cookies">
@@ -55,7 +55,7 @@ function PoliticaCookies() {
         </p>
         <p className="parrafo-politica-cookies">Gracias por su colaboración.</p>
       </section>
-    </main>
+
         <Footer/>
     </div>
   )
