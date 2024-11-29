@@ -22,6 +22,7 @@ import Jordan from './componentes/Jordan/Jordan';
 import Balenciaga from './componentes/Balenciaga/Balenciaga';
 import Gucci from './componentes/Gucci/Gucci';
 import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/ListaTiendaColaboraciones';
+import Marca from './componentes/Marca/Marca';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
           <Route path="/AvisoLegal" element={<AvisoLegal/>} />
 
-          <Route path="/Louisvuitton" element={<Louisvuitton/>} />
+          <Route path="/Louisvuitton" element={<Marca/>} />
           <Route path="/Yezzy" element={<Yeezy/>} />
           <Route path="/Nike" element={<Nike/>} />
           <Route path="/Adidas" element={<Adidas/>} />
