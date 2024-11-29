@@ -1,9 +1,6 @@
-
-
-    "react-router-dom": "^7.0.0",
-
+{
+  "dependencies": {
     "react-router-dom": "^7.0.1",
-
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
