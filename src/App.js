@@ -4,6 +4,11 @@ import Login from './componentes/Login/Login';
 import PerdidaContraseña from './componentes/PerdidaContraseña/PerdidaContraseña';
 import Registro from './componentes/Registro/Registro';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SobreNosotros from './componentes/SobreNosotros/SobreNosotros';
+import Colaboraciones from './componentes/Colaboraciones/Colaboraciones';
+import Contacto from './componentes/Contacto/Contacto';
+import PoliticaCookies from './componentes/PoliticaCookies/PoliticaCookies';
+import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 import Yeezy from './componentes/Yeezy/Yeezy';
 import Louisvuitton from './componentes/Louisvuitton/Louisvuitton';
 import Nike from './componentes/Nike/Nike';
@@ -23,6 +28,13 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Registro" element={<Registro />} />
           <Route path="/Perdidacontraseña" element={<PerdidaContraseña />} />
+
+          <Route path="/SobreNosotros" element={<SobreNosotros/>} />
+          <Route path="/Colaboraciones" element={<Colaboraciones/>} />
+          <Route path="/Contacto" element={<Contacto/>} />
+          <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
+          <Route path="/AvisoLegal" element={<AvisoLegal/>} />
+
           <Route path="/Louisvuitton" element={<Louisvuitton/>} />
           <Route path="/Yezzy" element={<Yeezy/>} />
           <Route path="/Nike" element={<Nike/>} />
@@ -32,6 +44,7 @@ function App() {
           <Route path="/Balenciaga" element={<Balenciaga />} />
           <Route path="/Gucci" element={<Gucci/>} />
           <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
+
         </Routes>
       </div>
     </Router>
