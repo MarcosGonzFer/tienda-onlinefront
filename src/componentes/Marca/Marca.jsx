@@ -42,34 +42,37 @@ function Marca() {
         <div>
             <Header />
             <Nav />
-            <div className="luisvi-fondo-zapatillas">
-                <div className={className ? `marca-container ${className}` : 'marca-container'}>
-                    <div className="marca-header">
-                        <h1>{title}</h1>
-                    </div>
-                    <div className={className ? `lista-zapatillas-${className}` : 'lista-zapatillas'}>
-                        {zapatillas.map((item, index) => (
-                            <div key={index} className={className ? `caja-zapatillas-${className}` : 'caja-zapatillas'}>
-                                <img src={item.src} alt={item.alt} />
-                                <h2>{item.label}</h2>
-                                <p className="precio-zapatilla">{item.price}</p>
-                            </div>
-                        ))}
-                    </div>
+            <div className="marca-container">
+                <div className="marca-header">
+                    <h1>{title}</h1> 
                 </div>
-                {exclusivo && (
-                    <div className={className ? `caja-zapatillas-${className}-exclusivo` : 'exclusivo-container'}>
-                        <div className={className ? `caja-imagenes-${className}-exclusivo` : 'imagenes-exclusivo'}>
-                            {exclusivo.images.map((src, index) => (
-                                <img key={index} src={src} alt={`Exclusivo ${index + 1}`} />
+                
+                <div className="luisvi-fondo-zapatillas">
+                    <div className={className ? `marca-container ${className}` : 'marca-container'}>
+                        <div className={className ? `lista-zapatillas-${className}` : 'lista-zapatillas'}>
+                            {zapatillas.map((item, index) => (
+                                <div key={index} className={className ? `caja-zapatillas-${className}` : 'caja-zapatillas'}>
+                                    <img src={item.src} alt={item.alt} />
+                                    <h2>{item.label}</h2>
+                                    <p className="precio-zapatilla">{item.price}</p>
+                                </div>
                             ))}
                         </div>
-                        <h2>{exclusivo.title}</h2>
-                        <p className="precio-zapatilla">{exclusivo.price}</p>
                     </div>
-                )}
+                    {exclusivo && (
+                        <div className={className ? `caja-zapatillas-${className}-exclusivo` : 'exclusivo-container'}>
+                            <div className={className ? `caja-imagenes-${className}-exclusivo` : 'imagenes-exclusivo'}>
+                                {exclusivo.images.map((src, index) => (
+                                    <img key={index} src={src} alt={`Exclusivo ${index + 1}`} />
+                                ))}
+                            </div>
+                            <h2>{exclusivo.title}</h2>
+                            <p className="precio-zapatilla">{exclusivo.price}</p>
+                        </div>
+                    )}
+                </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }

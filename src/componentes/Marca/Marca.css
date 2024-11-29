@@ -1,17 +1,29 @@
 .lista-zapatillas-louisvi {
     display: grid;
     max-width: 1240px;
-    margin: 0 auto;
+    margin: 10px auto;
     align-items: center;
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
     justify-items: center;
 }
+.marca-header{
+    background-color: black;
+    margin-top: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ad8a1f;
+    margin-bottom: 10px;
+    margin-left: 610px;
 
+}
 .luisvi-fondo-zapatillas {
     background-image: url(/public/imagenes/louisvuittoninicio.png);
     background-size: cover;
     background-position: center;
+    padding-bottom: 30px;
 }
 
 .caja-zapatillas-louisvi-exclusivo {
