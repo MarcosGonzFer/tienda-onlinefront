@@ -4,8 +4,6 @@ import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import './Marca.css';
-import Yeezy from '../Yeezy/Yeezy';
-import Nike from '../Nike/Nike';
 
 function Marca() {
     
@@ -112,6 +110,33 @@ function Marca() {
                     '/imagenes/adidas10.png',
                 ],
                 price: '180.000 €',
+
+            },
+        },
+        Jordan: {
+            title: 'Jordan',
+            className: 'jordan',
+            zapatillas: [
+                { src: '/imagenes/jordan1.png', alt: 'Jordan 4 Retro Kaws', label: 'Jordan 4 Retro Kaws', price: '1.847 €' },
+                { src: '/imagenes/jordan2.png', alt: '1 Retro High Fragment', label: '1 Retro High Fragment', price: '1.952 €' },
+                { src: '/imagenes/jordan3.png', alt: '1 Mid Negro Blanco Dorado', label: '1 Mid Negro Blanco Dorado', price: '582 €' },
+                { src: '/imagenes/jordan4.png', alt: '4 Retro Doernbecher', label: '4 Retro Doernbecher', price: '2.294 €' },
+                { src: '/imagenes/jordan5.png', alt: 'Jordan 1 Retro Iglú Alto', label: 'Jordan 1 Retro Iglú Alto', price: '3.669 €' },
+                { src: '/imagenes/jordan6.png', alt: 'Jordan MVP 678 Raptors', label: 'Jordan MVP 678 Raptors', price: '254 €' },
+                { src: '/imagenes/jordan7.png', alt: '1 Retro Alto Rosa Óxido', label: '1 Retro Alto Rosa Óxido', price: '5.030 €' },
+                { src: '/imagenes/jordan8.png', alt: 'Jordan MVP Cardenal Rojo', label: 'Jordan MVP Cardenal Rojo', price: '267 €' },
+                { src: '/imagenes/jordan9.png', alt: 'Jordan 1 Retro Bred (1994)', label: 'Jordan 1 Retro Bred (1994)', price: '2.065 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Jordan 5 Retro Low CLOT Blanco Seda 20º Aniversario',
+                images: [
+                    '/imagenes/jordan10.png',
+                    '/imagenes/jordan11.png',
+                    '/imagenes/jordan10.png',
+                    '/imagenes/jordan11.png',
+                ],
+                price: '12.908 €',
 
             },
         },

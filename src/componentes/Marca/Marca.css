@@ -45,6 +45,12 @@
     background-position: center;
     padding-bottom: 30px;
 }
+.jordan-fondo-zapatillas{
+    background-image: url(/public/imagenes/jordaninicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
 
 .caja-zapatillas-exclusivo {
     display: flex;
