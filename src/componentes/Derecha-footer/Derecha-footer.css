@@ -1,0 +1,35 @@
+
+.zona-derecha ul {
+  list-style: none;
+  padding: 0;
+}
+
+.zona-derecha ul li {
+  margin-bottom: 10px;
+}
+
+
+.zona-derecha ul li button {
+  background-size: cover; 
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  background: none; 
+  border: none;
+  color: #AD8A1F;
+}
+
+.redes-sociales a {
+  color: #AD8A1F;
+  font-size: 1.5em;
+  margin-right: 15px;
+  text-decoration: none;
+  display: inline-block; 
+  width: 40px; 
+  height: 60px; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 0 5px; 
+  margin-inline: 6px;
+  margin-top: 20px;
+}

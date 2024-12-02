@@ -1,0 +1,140 @@
+.lista-zapatillas {
+    display: grid;
+    max-width: 1240px;
+    margin: 10px auto;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    justify-items: center;
+}
+
+
+.marca-header{
+    background-color: black;
+    margin-top: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ad8a1f;
+    margin-bottom: 10px;
+    margin-left: 610px;
+
+}
+.louisvi-fondo-zapatillas{
+    background-image: url(/public/imagenes/louisvuittoninicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.yeezy-fondo-zapatillas{
+    background-image: url(/public/imagenes/yeezyinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+
+.caja-zapatillas-exclusivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-column: span 3; 
+    justify-self: center; 
+}
+.caja-zapatillas-exclusivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-column: span 3; 
+    justify-self: center; 
+}
+
+.caja-imagenes-exclusivo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.caja-zapatillas-exclusivo img {
+    width: 250px;
+    height: auto;
+    flex: 1 1 30%;
+}
+.caja-zapatillas-exclusivo img {
+    width: 250px;
+    height: auto;
+    flex: 1 1 30%;
+}
+
+.louisvi {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ad8a1f;
+}
+.yeezy {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ad8a1f;
+}
+
+.caja-zapatillas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.caja-zapatillas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.caja-zapatillas img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.caja-zapatillas h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ad8a1f;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.precio-zapatilla {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
