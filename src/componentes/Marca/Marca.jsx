@@ -5,6 +5,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import './Marca.css';
 
+
 function Marca() {
     
     const marcasData = {
@@ -164,6 +165,34 @@ function Marca() {
                     '/imagenes/jordan11.png',
                 ],
                 price: '12.908 €',
+
+            },
+        },
+
+        Gucci: {
+            title: 'Gucci',
+            className: 'gucci',
+            zapatillas: [
+                { src: '/imagenes/jordan1.png', alt: 'Jordan 4 Retro Kaws', label: 'Jordan 4 Retro Kaws', price: '1.847 €' },
+                { src: '/imagenes/jordan2.png', alt: '1 Retro High Fragment', label: '1 Retro High Fragment', price: '1.952 €' },
+                { src: '/imagenes/jordan3.png', alt: '1 Mid Negro Blanco Dorado', label: '1 Mid Negro Blanco Dorado', price: '582 €' },
+                { src: '/imagenes/jordan4.png', alt: '4 Retro Doernbecher', label: '4 Retro Doernbecher', price: '2.294 €' },
+                { src: '/imagenes/jordan5.png', alt: 'Jordan 1 Retro Iglú Alto', label: 'Jordan 1 Retro Iglú Alto', price: '3.669 €' },
+                { src: '/imagenes/jordan6.png', alt: 'Jordan MVP 678 Raptors', label: 'Jordan MVP 678 Raptors', price: '254 €' },
+                { src: '/imagenes/jordan7.png', alt: '1 Retro Alto Rosa Óxido', label: '1 Retro Alto Rosa Óxido', price: '5.030 €' },
+                { src: '/imagenes/jordan8.png', alt: 'Jordan MVP Cardenal Rojo', label: 'Jordan MVP Cardenal Rojo', price: '267 €' },
+                { src: '/imagenes/jordan9.png', alt: 'Jordan 1 Retro Bred (1994)', label: 'Jordan 1 Retro Bred (1994)', price: '2.065 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Microsoft Xbox x Gucci Series X Special Edition (US Plug) Console Bundle ',
+                images: [
+                    '/imagenes/gucci10.png',
+                    '/imagenes/gucci11.png',
+                    '/imagenes/gucci12.png',
+                    '/imagenes/gucci13.png',
+                ],
+                price: '21.503 €',
 
             },
         },
