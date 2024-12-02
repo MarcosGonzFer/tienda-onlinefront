@@ -5,10 +5,10 @@ import NavBuscador from '../NavBuscador/NavBuscador';
 function NavLinks() {
   return (
     <div className="contenedor-nav">
-      {/* Elemento "Marcas" con menú desplegable */}
+      {}
       <div className="nav-item marcas">
         <a href="#">Marcas</a>
-        {/* Menú desplegable */}
+        
         <div className="dropdown-menu">
           <a href="/marcas/louis-vuitton">Louis Vuitton</a>
           <a href="/marcas/nike">Nike</a>
@@ -17,12 +17,12 @@ function NavLinks() {
         </div>
       </div>
 
-      {/* Otros enlaces */}
+      
       <a href="/hombres">Hombres</a>
       <a href="/mujeres">Mujeres</a>
       <a href="/Accesorios">Accesorios</a>
 
-      {/* Buscador */}
+      
       <NavBuscador />
     </div>
   );

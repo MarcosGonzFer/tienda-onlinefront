@@ -1,0 +1,43 @@
+/* Estilo del contenedor principal */
+.hombres-section {
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo gris claro */
+  }
+  
+  /* Contenedor de la cuadrícula */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 10px; /* Espacio mínimo entre las imágenes */
+    justify-items: center; /* Centrar los elementos en su celda */
+  }
+  
+  /* Elemento individual en la cuadrícula */
+  .grid-item {
+    text-align: center;
+  }
+  
+  /* Estilo de las imágenes */
+  .grid-container img {
+    width: 100%;
+    max-width: 350px; /* Tamaño máximo bastante más grande */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover en las imágenes */
+  .grid-container img:hover {
+    transform: scale(1.05); /* Zoom suave al pasar el ratón */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  }
+  
+  /* Estilo del texto debajo de las imágenes */
+  .marca {
+    margin-top: 5px; /* Muy poco margen entre imagen y texto */
+    font-size: 18px; /* Texto más grande */
+    font-weight: bold;
+    color: #333; /* Color gris oscuro */
+  }
+  
