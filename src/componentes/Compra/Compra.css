@@ -1,0 +1,80 @@
+.compra-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.compra-left, .compra-right {
+    width: 48%;
+}
+
+.compra-left {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.compra-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.compra-right {
+    padding: 20px;
+}
+
+.compra-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input, .campo select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-compra {
+    background-color: #ad8a1f;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-compra:hover {
+    background-color: #8c6a12;
+}
