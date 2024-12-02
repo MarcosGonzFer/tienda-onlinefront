@@ -111,7 +111,34 @@ function Marca() {
                     '/imagenes/adidas12.png',
                     '/imagenes/adidas10.png',
                 ],
-                price: '180.000 €',
+                price: '10.027 €',
+
+            },
+        },
+
+        NewBalance: {
+            title: 'New Balance',
+            className: 'newBalance',
+            zapatillas: [
+                { src: '/imagenes/newbalance1.png', alt: '530 SL', label: '530 SL', price: '2.073 €' },
+                { src: '/imagenes/newbalance2.png', alt: ' 530 SL Mule', label: ' 530 SL Mule', price: '2.378 €' },
+                { src: '/imagenes/newbalance3.png', alt: '1906R', label: '1906R', price: '2.040 €' },
+                { src: '/imagenes/newbalance4.png', alt: ' 990v6', label: ' 990v6', price: '3.572 €' },
+                { src: '/imagenes/newbalance5.png', alt: '992', label: '992', price: '802 €' },
+                { src: '/imagenes/newbalance6.png', alt: 'FuelCell SuperComp Elite v4', label: 'FuelCell SuperComp Elite v4', price: '618 €' },
+                { src: '/imagenes/newbalance7.png', alt: '990v4', label: '990v4', price: '974 €' },
+                { src: '/imagenes/newbalance8.png', alt: '2002R ', label: '2002R', price: '577 €' },
+                { src: '/imagenes/newbalance9.png', alt: '550', label: '550', price: '809 €' },
+            ],
+            exclusivo: {
+                title: 'DropX™ Exclusive: 997G',
+                images: [
+                    '/imagenes/newbalance10.png',
+                    '/imagenes/newbalance11.png',
+                    '/imagenes/newbalance12.png',
+                    '/imagenes/newbalance13.png',
+                ],
+                price: '9.900 €',
 
             },
         },
