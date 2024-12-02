@@ -15,7 +15,7 @@ function Marcas() {
 
       {}
       <section className="marcas-seccion">
-        {/* Aquí puedes añadir tu contenido específico para Marcas */}
+        {}
         <h1>Bienvenido a la sección de Marcas</h1>
         <p>Aquí encontrarás información sobre nuestras principales marcas.</p>
       </section>

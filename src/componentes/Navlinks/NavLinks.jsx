@@ -14,6 +14,11 @@ function NavLinks() {
           <a href="/marcas/nike">Nike</a>
           <a href="/marcas/gucci">Gucci</a>
           <a href="/marcas/adidas">Adidas</a>
+          <a href="/marcas/yezze">Yezze</a>
+          <a href="/marcas/Newalance">New Balance</a>
+          <a href="/marcas/Balenciaga">Balenciaga</a>
+          <a href="/marcas/jordan">Jordan</a>
+          
         </div>
       </div>
 
