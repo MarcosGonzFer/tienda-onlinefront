@@ -39,6 +39,12 @@
     background-position: center;
     padding-bottom: 30px;
 }
+.adidas-fondo-zapatillas{
+    background-image: url(/public/imagenes/adidasinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
 
 .caja-zapatillas-exclusivo {
     display: flex;
