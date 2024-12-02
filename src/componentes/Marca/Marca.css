@@ -33,6 +33,12 @@
     background-position: center;
     padding-bottom: 30px;
 }
+.nike-fondo-zapatillas{
+    background-image: url(/public/imagenes/nikeinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
 
 .caja-zapatillas-exclusivo {
     display: flex;
@@ -89,6 +95,13 @@
     color: #ad8a1f;
 }
 .yeezy {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ad8a1f;
+}
+.nike {
     width: 100%;
     text-align: center;
     font-size: 15px;

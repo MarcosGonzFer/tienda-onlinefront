@@ -5,6 +5,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import './Marca.css';
 import Yeezy from '../Yeezy/Yeezy';
+import Nike from '../Nike/Nike';
 
 function Marca() {
     
@@ -57,6 +58,32 @@ function Marca() {
                     '/imagenes/yeezy13.png',
                 ],
                 price: '12.980 €',
+            },
+        },
+        Nike: {
+            title: 'Nike',
+            className: 'nike',
+            zapatillas: [
+                { src: '/imagenes/nike1.png', alt: 'Alphafly 3 Premium', label: 'Alphafly 3 Premium', price: '319,99 €' },
+                { src: '/imagenes/nike2.png', alt: 'Air VaporMax 2023 Flyknit', label: 'Air VaporMax 2023 Flyknit', price: '229,99 €' },
+                { src: '/imagenes/nike3.png', alt: 'ump 2 Electric', label: 'ump 2 Electric', price: '229,99 €' },
+                { src: '/imagenes/nike4.png', alt: 'Nike Air Foamposite One', label: 'Nike Air Foamposite One', price: '229,99 €' },
+                { src: '/imagenes/nike5.png', alt: 'Air Jordan 9 G', label: 'Air Jordan 9 G', price: '219,99 €' },
+                { src: '/imagenes/nike6.png', alt: 'Nike G.T. Jump 2', label: 'Nike G.T. Jump 2', price: '219,99 €' },
+                { src: '/imagenes/nike7.png', alt: 'Nike Air Zoom Victory Tour 3', label: 'Nike Air Zoom Victory Tour 3', price: '219,99 €' },
+                { src: '/imagenes/nike8.png', alt: 'Nike Invincible 3 By You', label: 'Nike Invincible 3 By You', price: '219,99 €' },
+                { src: '/imagenes/nike9.png', alt: 'Nike Air Max 95 By You', label: 'Nike Air Max 95 By You', price: '219,99 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Solid Gold OVO',
+                images: [
+                    '/imagenes/nike10.png',
+                    '/imagenes/nike11.png',
+                    '/imagenes/nike12.png',
+                    '/imagenes/nike13.png',
+                ],
+                price: '2 Millones €',
             },
         },
     };
