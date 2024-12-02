@@ -14,7 +14,6 @@ import Contacto from './componentes/Contacto/Contacto';
 import PoliticaCookies from './componentes/PoliticaCookies/PoliticaCookies';
 import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 import Yeezy from './componentes/Yeezy/Yeezy';
-import Louisvuitton from './componentes/Louisvuitton/Louisvuitton';
 import Nike from './componentes/Nike/Nike';
 import Adidas from './componentes/Adidas/Adidas';
 import NewBalance from './componentes/NewBalance/NewBalance';
@@ -45,7 +44,7 @@ function App() {
           <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
           <Route path="/AvisoLegal" element={<AvisoLegal/>} />
 
-          <Route path="/Louisvuitton" element={<Marca/>} />
+          <Route path="/Marca/:marca" element={<Marca/>} />
           <Route path="/Yezzy" element={<Yeezy/>} />
           <Route path="/Nike" element={<Nike/>} />
           <Route path="/Adidas" element={<Adidas/>} />
