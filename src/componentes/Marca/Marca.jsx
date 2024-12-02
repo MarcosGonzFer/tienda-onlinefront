@@ -59,6 +59,31 @@ function Marca() {
                 price: '12.980 €',
             },
         },
+        Adidas: {
+            title: 'Adidas',
+            className: 'adidas',
+            zapatillas: [
+                { src: '/imagenes/adidas1.png', alt: 'Micropacer', label: 'Micropacer', price: '1.139 €' },
+                { src: '/imagenes/adidas2.png', alt: 'Bowling Shoe', label: 'Bowling Shoe', price: '2.065 €' },
+                { src: '/imagenes/adidas3.png', alt: 'Samba Wales Bonne', label: 'Samba Wales Bonne', price: '1.780 €' },
+                { src: '/imagenes/adidas4.png', alt: 'x Gucci Gazelle', label: 'x Gucci Gazelle', price: '1.440 €' },
+                { src: '/imagenes/adidas5.png', alt: 'Campus Moncler', label: 'Campus Moncler', price: '1.514 €' },
+                { src: '/imagenes/adidas6.png', alt: 'D Rose 7 Primeknit', label: 'D Rose 7 Primeknit', price: '2.349 €' },
+                { src: '/imagenes/adidas7.png', alt: 'Human Race NMD', label: 'Human Race NMD', price: '9.543 €' },
+                { src: '/imagenes/adidas8.png', alt: 'JS Wings 2.0 ', label: 'JS Wings 2.0', price: '1.051 €' },
+                { src: '/imagenes/adidas9.png', alt: 'ZX 750', label: 'ZX 750', price: '12.275 €' },
+            ],
+            exclusivo: {
+                title: 'NMD_Rimowa Backpack',
+                images: [
+                    '/imagenes/adidas10.png',
+                    '/imagenes/adidas11.png',
+                    '/imagenes/adidas12.png',
+                    '/imagenes/adidas10.png',
+                ],
+                price: '180.000 €',
+            },
+        },
     };
     const { marca } = useParams();
     const marcaSeleccionada = marcasData[marca] || {};
