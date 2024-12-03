@@ -57,6 +57,24 @@
     background-position: center;
     padding-bottom: 30px;
 }
+.gucci-fondo-zapatillas{
+    background-image: url(/public/imagenes/gucciinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.Balenciaga-fondo-zapatillas{
+    background-image: url(/public/imagenes/balenciagainicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.dior-fondo-zapatillas{
+    background-image: url(/public/imagenes/diorinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
 
 .caja-zapatillas-exclusivo {
     display: flex;

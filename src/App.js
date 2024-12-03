@@ -6,7 +6,6 @@ import Login from './componentes/Login/Login';
 import Compra from './componentes/Compra/Compra';
 import PerdidaContraseña from './componentes/PerdidaContraseña/PerdidaContraseña';
 import Registro from './componentes/Registro/Registro';
-import Marcas from './componentes/Marcas/Marcas';
 import Hombres from './componentes/Hombres/Hombres';
 import Mujeres from './componentes/Mujeres/Mujeres'; 
 import Accesorios from './componentes/Accesorios/Accesorios'; 

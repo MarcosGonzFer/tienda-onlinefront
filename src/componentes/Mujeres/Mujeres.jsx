@@ -25,6 +25,20 @@ function Mujeres() {
         { src: '/imagenes/adidas5.png', alt: 'Campus Moncler', label: 'Campus Moncler', price: '1.514 €' },
         { src: '/imagenes/newbalance2.png', alt: '530 SL Mule', label: '530 SL Mule', price: '2.378 €' },
         { src: '/imagenes/newbalance4.png', alt: '990v6', label: '990v6', price: '3.572 €' },
+        { src: '/imagenes/dior7.png', alt: 'Alpha Sandal', label: 'Alpha Sandal', price: '889 €' },
+        { src: '/imagenes/balenciaga1.png', alt: 'Triple S All Over Logo', label: 'Triple S All Over Logo', price: '775 €' },
+        { src: '/imagenes/balenciaga2.png', alt: ' Alaska Low Boot', label: ' Alaska Low Boot', price: '1.711 €' },
+        { src: '/imagenes/balenciaga3.png', alt: 'Speed', label: 'Speed', price: '976 €' },
+        { src: '/imagenes/balenciaga4.png', alt: '3XL', label: '3XL', price: '1.036 €' },
+        { src: '/imagenes/balenciaga6.png', alt: ' Triple S', label: ' Triple S', price: '1.019 €' },
+        { src: '/imagenes/balenciaga7.png', alt: 'Defender', label: 'Defender', price: '1.296 €' },
+        { src: '/imagenes/gucci2.png', alt: 'Angelina Platform', label: 'Angelina Platform', price: '756 €' },
+        { src: '/imagenes/gucci3.png', alt: 'Damensandale', label: 'Damensandale', price: '692 €' },
+        { src: '/imagenes/gucci4.png', alt: 'Princetown Slipper', label: 'Princetown Slipper', price: '1.146 €' },
+        { src: '/imagenes/gucci5.png', alt: 'GG Sneaker', label: 'GG Sneaker', price: '1.503 €' },
+        { src: '/imagenes/gucci9.png', alt: 'Rhyton', label: 'Rhyton', price: '1.137 €' }
+
+
        
       ],
     },
