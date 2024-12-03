@@ -224,6 +224,34 @@ function Marca() {
 
             },
         },
+
+        Dior: {
+            title: 'Dior',
+            className: 'dior',
+            zapatillas: [
+                { src: '/imagenes/dior1.png', alt: 'B23 High Top', label: 'B23 High Top', price: '809 €' },
+                { src: '/imagenes/dior2.png', alt: 'Combat Derby', label: 'Combat Derby', price: '980 €' },
+                { src: '/imagenes/dior3.png', alt: 'B44 Blade', label: 'B44 Blade', price: '1.536 €' },
+                { src: '/imagenes/dior4.png', alt: 'Snow Derby', label: 'Snow Derby', price: '1.723 €' },
+                { src: '/imagenes/dior5.png', alt: 'Granville Loafer', label: 'Granville Loafer', price: '980 €' },
+                { src: '/imagenes/dior6.png', alt: 'Stone Island B57 ', label: 'Stone Island B57 ', price: '1.771 €' },
+                { src: '/imagenes/dior7.png', alt: 'Alpha Sandal', label: 'Alpha Sandal', price: '889 €' },
+                { src: '/imagenes/dior8.png', alt: 'D Connect', label: 'D Connect', price: '1.397 €' },
+                { src: '/imagenes/dior9.png', alt: 'B23 CACTUS JACK', label: 'B23 CACTUS JACK', price: '552 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Sorayama Android Ring Set ',
+                images: [
+                    '/imagenes/dior10.png',
+                    '/imagenes/dior11.png',
+                    '/imagenes/dior10.png',
+                    '/imagenes/dior11.png',
+                ],
+                price: '42.989 €',
+
+            },
+        },
     };
     const { marca } = useParams();
     const marcaSeleccionada = marcasData[marca] || {};
