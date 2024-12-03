@@ -6,6 +6,10 @@ import Login from './componentes/Login/Login';
 import Compra from './componentes/Compra/Compra';
 import PerdidaContraseña from './componentes/PerdidaContraseña/PerdidaContraseña';
 import Registro from './componentes/Registro/Registro';
+import Marcas from './componentes/Marcas/Marcas';
+import Hombres from './componentes/Hombres/Hombres';
+import Mujeres from './componentes/Mujeres/Mujeres'; 
+import Accesorios from './componentes/Accesorios/Accesorios'; 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Tienda from './componentes/Tienda/Tienda';
 import SobreNosotros from './componentes/SobreNosotros/SobreNosotros';
@@ -30,15 +34,17 @@ function App() {
           <Route path="/Compra" element={<Compra />}/>
           <Route path="/Registro" element={<Registro />} />
           <Route path="/Perdidacontraseña" element={<PerdidaContraseña />} />
-
+          <Route path="/Hombres" element={<Hombres />} />
+          <Route path="/Mujeres" element={<Mujeres />} /> {}
+          <Route path="/Accesorios" element={<Accesorios />} /> {}
           <Route path="/SobreNosotros" element={<SobreNosotros/>} />
           <Route path="/Colaboraciones" element={<Colaboraciones/>} />
           <Route path="/Contacto" element={<Contacto/>} />
           <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
           <Route path="/AvisoLegal" element={<AvisoLegal/>} />
-
           <Route path="/Marca/:marca" element={<Marca/>} />
           <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
+
 
         </Routes>
       </div>
