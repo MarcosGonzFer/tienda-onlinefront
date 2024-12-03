@@ -1,18 +1,14 @@
-.lista-zapatillas-ofertas {
+.lista-zapatillas-colaboraciones {
     display: grid;
     max-width: 1240px;
     margin: 10px auto;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
     justify-items: center;
 }
-.ofertas-container{
-    background-image: url(/public/imagenes/ofertainicio.png);
-    background-size: cover;
-    background-position: center;
-}
-.ofertas-header {
+
+.colaboraciones-header {
     background-color: white;
     margin-top: 10px;
     width: 300px;
@@ -25,14 +21,14 @@
     margin-right: auto;
 }
 
-.caja-zapatillas-ofertas {
+.caja-zapatillas-colaboraciones {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: rgba(250, 250, 250, 0.9);
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -40,19 +36,19 @@
     margin-bottom: 30px;
 }
 
-.caja-zapatillas-ofertas:hover {
+.caja-zapatillas-colaboraciones:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.caja-zapatillas-ofertas img {
+.caja-zapatillas-colaboraciones img {
     width: 100%;
     height: 200px;
     object-fit: contain;
     border-radius: 5px;
 }
 
-.caja-zapatillas-ofertas h2 {
+.caja-zapatillas-colaboraciones h2 {
     font-size: 22px;
     font-weight: bold;
     color: #333;
@@ -60,16 +56,9 @@
     text-align: center;
 }
 
-.precio-original {
-    font-size: 18px;
-    text-decoration: line-through;
-    color: red;
-    margin-top: 10px;
-}
-
-.precio-oferta {
+.precio {
     font-size: 20px;
     font-weight: bold;
-    color: #28a745;
+    color: #ad8a1f;
     margin-top: 5px;
 }

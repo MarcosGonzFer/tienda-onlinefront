@@ -51,6 +51,12 @@
     background-position: center;
     padding-bottom: 30px;
 }
+.newBalance-fondo-zapatillas{
+    background-image: url(/public/imagenes/newbalanceinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
 
 .caja-zapatillas-exclusivo {
     display: flex;
@@ -88,11 +94,7 @@
     
 }
 
-.caja-zapatillas-exclusivo img {
-    width: 250px;
-    height: auto;
-    flex: 1 1 30%;
-}
+
 .caja-zapatillas-exclusivo img {
     width: 250px;
     height: auto;
