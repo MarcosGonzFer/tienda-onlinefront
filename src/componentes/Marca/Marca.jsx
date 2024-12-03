@@ -196,6 +196,34 @@ function Marca() {
 
             },
         },
+
+        Balenciaga: {
+            title: 'Balenciaga',
+            className: 'Balenciaga',
+            zapatillas: [
+                { src: '/imagenes/balenciaga1.png', alt: 'Triple S All Over Logo', label: 'Triple S All Over Logo', price: '775 €' },
+                { src: '/imagenes/balenciaga2.png', alt: ' Alaska Low Boot', label: ' Alaska Low Boot', price: '1.711 €' },
+                { src: '/imagenes/balenciaga3.png', alt: 'Speed', label: 'Speed', price: '976 €' },
+                { src: '/imagenes/balenciaga4.png', alt: '3XL', label: '3XL', price: '1.036 €' },
+                { src: '/imagenes/balenciaga5.png', alt: 'Track LED', label: 'Track LED', price: '1.706 €' },
+                { src: '/imagenes/balenciaga6.png', alt: ' Triple S', label: ' Triple S', price: '1.019 €' },
+                { src: '/imagenes/balenciaga7.png', alt: 'Defender', label: 'Defender', price: '1.296 €' },
+                { src: '/imagenes/balenciaga8.png', alt: 'Paris High Top', label: 'Paris High Top', price: '1097 €' },
+                { src: '/imagenes/balenciaga9.png', alt: 'Runner High', label: 'Runner High', price: '1.015 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Le Cagole Shoulder Bag',
+                images: [
+                    '/imagenes/balenciaga10.png',
+                    '/imagenes/balenciaga11.png',
+                    '/imagenes/balenciaga12.png',
+                    '/imagenes/balenciaga10.png',
+                ],
+                price: '10.821 €',
+
+            },
+        },
     };
     const { marca } = useParams();
     const marcaSeleccionada = marcasData[marca] || {};
