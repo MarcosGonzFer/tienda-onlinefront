@@ -8,7 +8,13 @@
 }
 
 
-.zona-izquierda ul li a {
+.zona-izquierda ul li  button {
+  background-size: cover; 
+  font-size: 1em;
   text-decoration: none;
+  font-weight: bold;
+  background: none; 
+  border: none;
   color: #AD8A1F;
 }
+
