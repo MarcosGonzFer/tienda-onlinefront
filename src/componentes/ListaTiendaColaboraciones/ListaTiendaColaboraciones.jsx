@@ -43,13 +43,13 @@ function ListaTiendaColaboraciones() {
         <div>
             <Header />
             <Nav />
-            <div className="colaboraciones-container">
-                <div className="colaboraciones-header">
+            <div className="colaboraciones-tienda-container">
+                <div className="colaboraciones-tienda-header">
                     <h1>{title}</h1>
                 </div>
-                <div className={className ? `lista-zapatillas-${className}` : 'lista-zapatillas'}>
+                <div className={className ? `lista-zapatillas-${className}-tienda` : 'lista-zapatillas'}>
                     {zapatillas.map((item, index) => (
-                        <div key={index} className={className ? `caja-zapatillas-${className}` : 'caja-zapatillas'}>
+                        <div key={index} className={className ? `caja-zapatillas-${className}-tienda` : 'caja-zapatillas'}>
                             <img src={item.src} alt={item.alt} />
                             <h2>{item.label}</h2>
                             <p className="precio">{item.price}</p>
