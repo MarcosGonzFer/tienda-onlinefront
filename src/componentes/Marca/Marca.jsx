@@ -5,6 +5,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import './Marca.css';
 
+
 function Marca() {
     
     const marcasData = {
@@ -164,6 +165,90 @@ function Marca() {
                     '/imagenes/jordan11.png',
                 ],
                 price: '12.908 €',
+
+            },
+        },
+
+        Gucci: {
+            title: 'Gucci',
+            className: 'gucci',
+            zapatillas: [
+                { src: '/imagenes/gucci1.png', alt: 'Jordaan Loafer', label: 'Jordaan Loafer', price: '854 €' },
+                { src: '/imagenes/gucci2.png', alt: 'Angelina Platform', label: 'Angelina Platform', price: '756 €' },
+                { src: '/imagenes/gucci3.png', alt: 'Damensandale', label: 'Damensandale', price: '692 €' },
+                { src: '/imagenes/gucci4.png', alt: 'Princetown Slipper', label: 'Princetown Slipper', price: '1.146 €' },
+                { src: '/imagenes/gucci5.png', alt: 'GG Sneaker', label: 'GG Sneaker', price: '1.503 €' },
+                { src: '/imagenes/gucci6.png', alt: 'Screener', label: 'Screener', price: '845 €' },
+                { src: '/imagenes/gucci7.png', alt: 'Run', label: 'Run', price: '686 €' },
+                { src: '/imagenes/gucci8.png', alt: 'GG High', label: 'GG High', price: '895 €' },
+                { src: '/imagenes/gucci9.png', alt: 'Rhyton', label: 'Rhyton', price: '1.137 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Microsoft Xbox x Gucci Series X Special Edition (US Plug) Console Bundle ',
+                images: [
+                    '/imagenes/gucci10.png',
+                    '/imagenes/gucci11.png',
+                    '/imagenes/gucci12.png',
+                    '/imagenes/gucci13.png',
+                ],
+                price: '21.503 €',
+
+            },
+        },
+
+        Balenciaga: {
+            title: 'Balenciaga',
+            className: 'Balenciaga',
+            zapatillas: [
+                { src: '/imagenes/balenciaga1.png', alt: 'Triple S All Over Logo', label: 'Triple S All Over Logo', price: '775 €' },
+                { src: '/imagenes/balenciaga2.png', alt: ' Alaska Low Boot', label: ' Alaska Low Boot', price: '1.711 €' },
+                { src: '/imagenes/balenciaga3.png', alt: 'Speed', label: 'Speed', price: '976 €' },
+                { src: '/imagenes/balenciaga4.png', alt: '3XL', label: '3XL', price: '1.036 €' },
+                { src: '/imagenes/balenciaga5.png', alt: 'Track LED', label: 'Track LED', price: '1.706 €' },
+                { src: '/imagenes/balenciaga6.png', alt: ' Triple S', label: ' Triple S', price: '1.019 €' },
+                { src: '/imagenes/balenciaga7.png', alt: 'Defender', label: 'Defender', price: '1.296 €' },
+                { src: '/imagenes/balenciaga8.png', alt: 'Paris High Top', label: 'Paris High Top', price: '1097 €' },
+                { src: '/imagenes/balenciaga9.png', alt: 'Runner High', label: 'Runner High', price: '1.015 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Le Cagole Shoulder Bag',
+                images: [
+                    '/imagenes/balenciaga10.png',
+                    '/imagenes/balenciaga11.png',
+                    '/imagenes/balenciaga12.png',
+                    '/imagenes/balenciaga10.png',
+                ],
+                price: '10.821 €',
+
+            },
+        },
+
+        Dior: {
+            title: 'Dior',
+            className: 'dior',
+            zapatillas: [
+                { src: '/imagenes/dior1.png', alt: 'B23 High Top', label: 'B23 High Top', price: '809 €' },
+                { src: '/imagenes/dior2.png', alt: 'Combat Derby', label: 'Combat Derby', price: '980 €' },
+                { src: '/imagenes/dior3.png', alt: 'B44 Blade', label: 'B44 Blade', price: '1.536 €' },
+                { src: '/imagenes/dior4.png', alt: 'Snow Derby', label: 'Snow Derby', price: '1.723 €' },
+                { src: '/imagenes/dior5.png', alt: 'Granville Loafer', label: 'Granville Loafer', price: '980 €' },
+                { src: '/imagenes/dior6.png', alt: 'Stone Island B57 ', label: 'Stone Island B57 ', price: '1.771 €' },
+                { src: '/imagenes/dior7.png', alt: 'Alpha Sandal', label: 'Alpha Sandal', price: '889 €' },
+                { src: '/imagenes/dior8.png', alt: 'D Connect', label: 'D Connect', price: '1.397 €' },
+                { src: '/imagenes/dior9.png', alt: 'B23 CACTUS JACK', label: 'B23 CACTUS JACK', price: '552 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Sorayama Android Ring Set ',
+                images: [
+                    '/imagenes/dior10.png',
+                    '/imagenes/dior11.png',
+                    '/imagenes/dior10.png',
+                    '/imagenes/dior11.png',
+                ],
+                price: '42.989 €',
 
             },
         },
