@@ -49,7 +49,7 @@ function Login() {
       </Link>
       <form className="login-formulario" onSubmit={handleSubmit}>
         <h2>Iniciar Sesión</h2>
-        <div className="formulario-grupos">
+        <div className="formulario-grupo">
           <label htmlFor="email">Correo Electrónico:</label>
           <input
             type="email"
@@ -60,7 +60,7 @@ function Login() {
             required
           />
         </div>
-        <div className="formulario-grupos">
+        <div className="formulario-grupo">
           <label htmlFor="password">Contraseña:</label>
           <input
             type="password"

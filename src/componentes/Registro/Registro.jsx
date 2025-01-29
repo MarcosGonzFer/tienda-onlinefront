@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Registro.css';
 import { Link, useNavigate } from 'react-router-dom'; 
 import { registerUser } from '../../Serviciosback/servicio';
 
