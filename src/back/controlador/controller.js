@@ -45,7 +45,6 @@ const loginUser = async (req, res) => {
           return res.status(400).json({ message: 'Contraseña incorrecta' });
       }
 
-      // ✅ **Asegurar que la clave JWT_SECRET esté definida**
       if (!process.env.JWT_SECRET) {
           throw new Error('Falta definir JWT_SECRET en el archivo .env');
       }
