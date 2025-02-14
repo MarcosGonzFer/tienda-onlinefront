@@ -9,7 +9,7 @@ function Tienda() {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/productos') 
+        fetch('http://localhost:3000/productos')
             .then(response => response.json())
             .then(data => setProductos(data))
             .catch(error => console.error('Error cargando los productos:', error));
@@ -25,8 +25,8 @@ function Tienda() {
                 </div>
                 <div className="lista-producto">
                     {productos.map((item) => (
-                        <Link key={item.id} to={`/producto/${item.id}`} className="caja-producto">
-                        <img src={item.src} alt={item.alt} />
+                        <Link key={item.id} to={`/producto/${item.id}`} className="caja-zapatillas-tienda">
+                            <img src={item.src} alt={item.alt} />
                             <h2>{item.label}</h2>
                             <p className="precio">{item.price}€</p>
                         </Link>
