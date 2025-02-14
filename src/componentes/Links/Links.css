@@ -1,7 +1,10 @@
 .navStyle {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
+
+/* Estilos de los enlaces de navegación */
 .linkStyle {
   color: #ad8a1f;
   text-decoration: none;
@@ -12,3 +15,59 @@
 .linkStyle:hover {
   color: #daae29;
 }
+
+/* Estilos del menú de usuario */
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Icono de usuario */
+.user-icon {
+  font-size: 24px;
+  color: #daae29;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 140px;
+  text-align: center;
+  z-index: 100;
+  display: block;
+}
+
+/* Enlace o botón dentro del dropdown */
+.dropdown-link {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  color: #daae29;
+  background: rgba(218, 174, 41, 0.1);
+}
+
+
+
+
+

@@ -2,59 +2,41 @@ const Usuario = require('../modelos/Usuarios');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
+const JWT_SECRET = process.env.JWT_SECRET || 'Qca200@';
+
+
 const registerUser = async (req, res) => {
-  const { name, email, password } = req.body;
-
   try {
-   
-    const userExists = await Usuario.findOne({ email });
-    if (userExists) {
-      return res.status(400).json({ message: 'El usuario ya está registrado' });
-    }
+    const { name, email, password } = req.body;
 
-   
+    const usuarioExiste = await Usuario.findOne({ email });
+    if (usuarioExiste) return res.status(400).json({ message: 'El usuario ya existe' });
+
     const hashedPassword = await bcrypt.hash(password, 10);
+    const nuevoUsuario = new Usuario({ name, email, password: hashedPassword });
 
-    
-    const newUser = new Usuario({
-      name,
-      email,
-      password: hashedPassword,
-    });
-
-    
-    await newUser.save();
+    await nuevoUsuario.save();
     res.status(201).json({ message: 'Usuario registrado correctamente' });
   } catch (error) {
-    console.error('Error al registrar usuario:', error);
-    res.status(500).json({ message: 'Error interno del servidor' });
+    res.status(500).json({ message: 'Error en el servidor' });
   }
 };
 
+// 🔹 Login de usuario
 const loginUser = async (req, res) => {
-  const { email, password } = req.body;
-
   try {
-      const user = await Usuario.findOne({ email });
-      if (!user) {
-          return res.status(400).json({ message: 'Usuario no encontrado' });
-      }
+    const { email, password } = req.body;
+    const usuario = await Usuario.findOne({ email });
 
-      const isMatch = await bcrypt.compare(password, user.password);
-      if (!isMatch) {
-          return res.status(400).json({ message: 'Contraseña incorrecta' });
-      }
+    if (!usuario) return res.status(400).json({ message: 'Correo o contraseña incorrectos' });
 
-      if (!process.env.JWT_SECRET) {
-          throw new Error('Falta definir JWT_SECRET en el archivo .env');
-      }
+    const match = await bcrypt.compare(password, usuario.password);
+    if (!match) return res.status(400).json({ message: 'Correo o contraseña incorrectos' });
 
-      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
-
-      res.json({ message: 'Inicio de sesión exitoso', token });
+    const token = jwt.sign({ id: usuario._id }, JWT_SECRET, { expiresIn: '1h' });
+    res.json({ token, user: { id: usuario._id, name: usuario.name, email: usuario.email } });
   } catch (error) {
-      console.error('Error al iniciar sesión:', error);
-      res.status(500).json({ message: 'Error en el servidor' });
+    res.status(500).json({ message: 'Error en el servidor' });
   }
 };
 
