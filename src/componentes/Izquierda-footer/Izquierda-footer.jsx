@@ -18,7 +18,7 @@ function Izquierda() {
       </Link>
     </li>
     <li>
-      <Link to="/Colaboraciones">
+      <Link to="/ListaTiendaColaboraciones">
         <button className="colaboraciones-footer">Colaboraciones</button>
       </Link>
     </li>

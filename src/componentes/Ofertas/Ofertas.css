@@ -7,10 +7,14 @@
     gap: 30px; 
     justify-items: center;
 }
-
+.ofertas-container{
+    background-image: url(/public/imagenes/ofertainicio.png);
+    background-size: cover;
+    background-position: center;
+}
 .ofertas-header {
     background-color: white;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 300px;
     align-items: center;
     justify-content: center;

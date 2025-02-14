@@ -33,6 +33,48 @@
     background-position: center;
     padding-bottom: 30px;
 }
+.nike-fondo-zapatillas{
+    background-image: url(/public/imagenes/nikeinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.adidas-fondo-zapatillas{
+    background-image: url(/public/imagenes/adidasinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.jordan-fondo-zapatillas{
+    background-image: url(/public/imagenes/jordaninicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.newBalance-fondo-zapatillas{
+    background-image: url(/public/imagenes/newbalanceinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.gucci-fondo-zapatillas{
+    background-image: url(/public/imagenes/gucciinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.Balenciaga-fondo-zapatillas{
+    background-image: url(/public/imagenes/balenciagainicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
+.dior-fondo-zapatillas{
+    background-image: url(/public/imagenes/diorinicio.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+}
 
 .caja-zapatillas-exclusivo {
     display: flex;
@@ -70,11 +112,7 @@
     
 }
 
-.caja-zapatillas-exclusivo img {
-    width: 250px;
-    height: auto;
-    flex: 1 1 30%;
-}
+
 .caja-zapatillas-exclusivo img {
     width: 250px;
     height: auto;
@@ -89,6 +127,13 @@
     color: #ad8a1f;
 }
 .yeezy {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ad8a1f;
+}
+.nike {
     width: 100%;
     text-align: center;
     font-size: 15px;

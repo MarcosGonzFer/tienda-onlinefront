@@ -1,27 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import './Tienda.css';
 
 function Tienda() {
-    const tiendaData = {
-        Tienda: {
-            title: 'Tienda',
-            className: 'tienda',
-            zapatillas: [
-                { src: 'imagenes/louisvuitton.png', alt: 'Louis Vuitton', label: 'Louis Vuitton red', price: '6635,95€' },
-                { src: 'imagenes/nike_travisscott.png', alt: 'Nike Travis Scott', label: 'Nike Travis Scott', price: '3608,00€' },
-                { src: 'imagenes/nike_offwhite.png', alt: 'Nike Offwhite', label: 'Nike Offwhite', price: '1447,00€' },
-                { src: 'imagenes/gucci.png', alt: 'Gucci Basket', label: 'Gucci Basket', price: '520,00€' },
-                { src: 'imagenes/LouisVuitton-x-Nike-removebg.png', alt: 'Louis Vuitton x Nike', label: 'Louis Vuitton x Nike', price: '14030,23' },
-                { src: 'imagenes/air-jordan-1-high-dior-removebg.png', alt: 'Jordan 1 Retro High Dior', label: 'Jordan 1 Retro High Dior', price: '7626,00€' },
-            ],
-        },
-    };
+    const [productos, setProductos] = useState([]);
 
-    const tiendaSeleccionada = tiendaData.Tienda;
-    const { title, zapatillas, className } = tiendaSeleccionada;
+    useEffect(() => {
+        fetch('http://localhost:3000/productos')
+            .then(response => response.json())
+            .then(data => setProductos(data))
+            .catch(error => console.error('Error cargando los productos:', error));
+    }, []);
 
     return (
         <div>
@@ -29,15 +21,15 @@ function Tienda() {
             <Nav />
             <div className="tienda-container">
                 <div className="tienda-header">
-                    <h1>{title}</h1>
+                    <h1>Tienda</h1>
                 </div>
-                <div className={className ? `lista-zapatillas-${className}` : 'lista-zapatillas'}>
-                    {zapatillas.map((item, index) => (
-                        <div key={index} className={className ? `caja-zapatillas-${className}` : 'caja-zapatillas'}>
+                <div className="lista-producto">
+                    {productos.map((item) => (
+                        <Link key={item.id} to={`/producto/${item.id}`} className="caja-zapatillas-tienda">
                             <img src={item.src} alt={item.alt} />
                             <h2>{item.label}</h2>
-                            <p className="precio">{item.price}</p>
-                        </div>
+                            <p className="precio">{item.price}€</p>
+                        </Link>
                     ))}
                 </div>
             </div>

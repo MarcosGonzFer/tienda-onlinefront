@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import './Marca.css';
-import Yeezy from '../Yeezy/Yeezy';
+
 
 function Marca() {
     
@@ -59,6 +59,35 @@ function Marca() {
                 price: '12.980 €',
             },
         },
+
+        Nike: {
+            title: 'Nike',
+            className: 'nike',
+            zapatillas: [
+                { src: '/imagenes/nike1.png', alt: 'Alphafly 3 Premium', label: 'Alphafly 3 Premium', price: '319,99 €' },
+                { src: '/imagenes/nike2.png', alt: 'Air VaporMax 2023 Flyknit', label: 'Air VaporMax 2023 Flyknit', price: '229,99 €' },
+                { src: '/imagenes/nike3.png', alt: 'ump 2 Electric', label: 'ump 2 Electric', price: '229,99 €' },
+                { src: '/imagenes/nike4.png', alt: 'Nike Air Foamposite One', label: 'Nike Air Foamposite One', price: '229,99 €' },
+                { src: '/imagenes/nike5.png', alt: 'Air Jordan 9 G', label: 'Air Jordan 9 G', price: '219,99 €' },
+                { src: '/imagenes/nike6.png', alt: 'Nike G.T. Jump 2', label: 'Nike G.T. Jump 2', price: '219,99 €' },
+                { src: '/imagenes/nike7.png', alt: 'Nike Air Zoom Victory Tour 3', label: 'Nike Air Zoom Victory Tour 3', price: '219,99 €' },
+                { src: '/imagenes/nike8.png', alt: 'Nike Invincible 3 By You', label: 'Nike Invincible 3 By You', price: '219,99 €' },
+                { src: '/imagenes/nike9.png', alt: 'Nike Air Max 95 By You', label: 'Nike Air Max 95 By You', price: '219,99 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Solid Gold OVO',
+                images: [
+                    '/imagenes/nike10.png',
+                    '/imagenes/nike11.png',
+                    '/imagenes/nike12.png',
+                    '/imagenes/nike13.png',
+                ],
+                price: '2 Millones €',
+
+            },
+        },
+
         Adidas: {
             title: 'Adidas',
             className: 'adidas',
@@ -81,7 +110,146 @@ function Marca() {
                     '/imagenes/adidas12.png',
                     '/imagenes/adidas10.png',
                 ],
-                price: '180.000 €',
+                price: '10.027 €',
+
+            },
+        },
+
+        NewBalance: {
+            title: 'New Balance',
+            className: 'newBalance',
+            zapatillas: [
+                { src: '/imagenes/newbalance1.png', alt: '530 SL', label: '530 SL', price: '2.073 €' },
+                { src: '/imagenes/newbalance2.png', alt: ' 530 SL Mule', label: ' 530 SL Mule', price: '2.378 €' },
+                { src: '/imagenes/newbalance3.png', alt: '1906R', label: '1906R', price: '2.040 €' },
+                { src: '/imagenes/newbalance4.png', alt: ' 990v6', label: ' 990v6', price: '3.572 €' },
+                { src: '/imagenes/newbalance5.png', alt: '992', label: '992', price: '802 €' },
+                { src: '/imagenes/newbalance6.png', alt: 'FuelCell SuperComp Elite v4', label: 'FuelCell SuperComp Elite v4', price: '618 €' },
+                { src: '/imagenes/newbalance7.png', alt: '990v4', label: '990v4', price: '974 €' },
+                { src: '/imagenes/newbalance8.png', alt: '2002R ', label: '2002R', price: '577 €' },
+                { src: '/imagenes/newbalance9.png', alt: '550', label: '550', price: '809 €' },
+            ],
+            exclusivo: {
+                title: 'DropX™ Exclusive: 997G',
+                images: [
+                    '/imagenes/newbalance10.png',
+                    '/imagenes/newbalance11.png',
+                    '/imagenes/newbalance12.png',
+                    '/imagenes/newbalance13.png',
+                ],
+                price: '9.900 €',
+
+            },
+        },
+        Jordan: {
+            title: 'Jordan',
+            className: 'jordan',
+            zapatillas: [
+                { src: '/imagenes/jordan1.png', alt: 'Jordan 4 Retro Kaws', label: 'Jordan 4 Retro Kaws', price: '1.847 €' },
+                { src: '/imagenes/jordan2.png', alt: '1 Retro High Fragment', label: '1 Retro High Fragment', price: '1.952 €' },
+                { src: '/imagenes/jordan3.png', alt: '1 Mid Negro Blanco Dorado', label: '1 Mid Negro Blanco Dorado', price: '582 €' },
+                { src: '/imagenes/jordan4.png', alt: '4 Retro Doernbecher', label: '4 Retro Doernbecher', price: '2.294 €' },
+                { src: '/imagenes/jordan5.png', alt: 'Jordan 1 Retro Iglú Alto', label: 'Jordan 1 Retro Iglú Alto', price: '3.669 €' },
+                { src: '/imagenes/jordan6.png', alt: 'Jordan MVP 678 Raptors', label: 'Jordan MVP 678 Raptors', price: '254 €' },
+                { src: '/imagenes/jordan7.png', alt: '1 Retro Alto Rosa Óxido', label: '1 Retro Alto Rosa Óxido', price: '5.030 €' },
+                { src: '/imagenes/jordan8.png', alt: 'Jordan MVP Cardenal Rojo', label: 'Jordan MVP Cardenal Rojo', price: '267 €' },
+                { src: '/imagenes/jordan9.png', alt: 'Jordan 1 Retro Bred (1994)', label: 'Jordan 1 Retro Bred (1994)', price: '2.065 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Jordan 5 Retro Low CLOT Blanco Seda 20º Aniversario',
+                images: [
+                    '/imagenes/jordan10.png',
+                    '/imagenes/jordan11.png',
+                    '/imagenes/jordan10.png',
+                    '/imagenes/jordan11.png',
+                ],
+                price: '12.908 €',
+
+            },
+        },
+
+        Gucci: {
+            title: 'Gucci',
+            className: 'gucci',
+            zapatillas: [
+                { src: '/imagenes/gucci1.png', alt: 'Jordaan Loafer', label: 'Jordaan Loafer', price: '854 €' },
+                { src: '/imagenes/gucci2.png', alt: 'Angelina Platform', label: 'Angelina Platform', price: '756 €' },
+                { src: '/imagenes/gucci3.png', alt: 'Damensandale', label: 'Damensandale', price: '692 €' },
+                { src: '/imagenes/gucci4.png', alt: 'Princetown Slipper', label: 'Princetown Slipper', price: '1.146 €' },
+                { src: '/imagenes/gucci5.png', alt: 'GG Sneaker', label: 'GG Sneaker', price: '1.503 €' },
+                { src: '/imagenes/gucci6.png', alt: 'Screener', label: 'Screener', price: '845 €' },
+                { src: '/imagenes/gucci7.png', alt: 'Run', label: 'Run', price: '686 €' },
+                { src: '/imagenes/gucci8.png', alt: 'GG High', label: 'GG High', price: '895 €' },
+                { src: '/imagenes/gucci9.png', alt: 'Rhyton', label: 'Rhyton', price: '1.137 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Microsoft Xbox x Gucci Series X Special Edition (US Plug) Console Bundle ',
+                images: [
+                    '/imagenes/gucci10.png',
+                    '/imagenes/gucci11.png',
+                    '/imagenes/gucci12.png',
+                    '/imagenes/gucci13.png',
+                ],
+                price: '21.503 €',
+
+            },
+        },
+
+        Balenciaga: {
+            title: 'Balenciaga',
+            className: 'Balenciaga',
+            zapatillas: [
+                { src: '/imagenes/balenciaga1.png', alt: 'Triple S All Over Logo', label: 'Triple S All Over Logo', price: '775 €' },
+                { src: '/imagenes/balenciaga2.png', alt: ' Alaska Low Boot', label: ' Alaska Low Boot', price: '1.711 €' },
+                { src: '/imagenes/balenciaga3.png', alt: 'Speed', label: 'Speed', price: '976 €' },
+                { src: '/imagenes/balenciaga4.png', alt: '3XL', label: '3XL', price: '1.036 €' },
+                { src: '/imagenes/balenciaga5.png', alt: 'Track LED', label: 'Track LED', price: '1.706 €' },
+                { src: '/imagenes/balenciaga6.png', alt: ' Triple S', label: ' Triple S', price: '1.019 €' },
+                { src: '/imagenes/balenciaga7.png', alt: 'Defender', label: 'Defender', price: '1.296 €' },
+                { src: '/imagenes/balenciaga8.png', alt: 'Paris High Top', label: 'Paris High Top', price: '1097 €' },
+                { src: '/imagenes/balenciaga9.png', alt: 'Runner High', label: 'Runner High', price: '1.015 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Le Cagole Shoulder Bag',
+                images: [
+                    '/imagenes/balenciaga10.png',
+                    '/imagenes/balenciaga11.png',
+                    '/imagenes/balenciaga12.png',
+                    '/imagenes/balenciaga10.png',
+                ],
+                price: '10.821 €',
+
+            },
+        },
+
+        Dior: {
+            title: 'Dior',
+            className: 'dior',
+            zapatillas: [
+                { src: '/imagenes/dior1.png', alt: 'B23 High Top', label: 'B23 High Top', price: '809 €' },
+                { src: '/imagenes/dior2.png', alt: 'Combat Derby', label: 'Combat Derby', price: '980 €' },
+                { src: '/imagenes/dior3.png', alt: 'B44 Blade', label: 'B44 Blade', price: '1.536 €' },
+                { src: '/imagenes/dior4.png', alt: 'Snow Derby', label: 'Snow Derby', price: '1.723 €' },
+                { src: '/imagenes/dior5.png', alt: 'Granville Loafer', label: 'Granville Loafer', price: '980 €' },
+                { src: '/imagenes/dior6.png', alt: 'Stone Island B57 ', label: 'Stone Island B57 ', price: '1.771 €' },
+                { src: '/imagenes/dior7.png', alt: 'Alpha Sandal', label: 'Alpha Sandal', price: '889 €' },
+                { src: '/imagenes/dior8.png', alt: 'D Connect', label: 'D Connect', price: '1.397 €' },
+                { src: '/imagenes/dior9.png', alt: 'B23 CACTUS JACK', label: 'B23 CACTUS JACK', price: '552 €' },
+               
+            ],
+            exclusivo: {
+                title: 'Sorayama Android Ring Set ',
+                images: [
+                    '/imagenes/dior10.png',
+                    '/imagenes/dior11.png',
+                    '/imagenes/dior10.png',
+                    '/imagenes/dior11.png',
+                ],
+                price: '42.989 €',
+
             },
         },
     };

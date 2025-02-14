@@ -18,7 +18,6 @@ function Compra() {
       precio: "3608,00€",
       cantidad: 2,
     },
-    // Añadir más productos
   ];
 
   const total = productos.reduce(
