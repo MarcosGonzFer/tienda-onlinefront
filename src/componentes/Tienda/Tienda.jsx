@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
@@ -22,13 +23,13 @@ function Tienda() {
                 <div className="tienda-header">
                     <h1>Tienda</h1>
                 </div>
-                <div className="lista-zapatillas">
-                    {productos.map((item, index) => (
-                        <div key={index} className="caja-zapatillas">
-                            <img src={item.src} alt={item.alt} />
+                <div className="lista-producto">
+                    {productos.map((item) => (
+                        <Link key={item.id} to={`/producto/${item.id}`} className="caja-producto">
+                        <img src={item.src} alt={item.alt} />
                             <h2>{item.label}</h2>
-                            <p className="precio">{item.price}</p>
-                        </div>
+                            <p className="precio">{item.price}€</p>
+                        </Link>
                     ))}
                 </div>
             </div>

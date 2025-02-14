@@ -18,6 +18,7 @@ import PoliticaCookies from './componentes/PoliticaCookies/PoliticaCookies';
 import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/ListaTiendaColaboraciones';
 import Marca from './componentes/Marca/Marca';
+import Zapatilla from './componentes/Zapatilla/Zapatilla';
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
           <Route path="/AvisoLegal" element={<AvisoLegal/>} />
           <Route path="/Marca/:marca" element={<Marca/>} />
           <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
+          <Route path="/producto/:id" element={<Zapatilla />} />
+
+          
 
 
         </Routes>
