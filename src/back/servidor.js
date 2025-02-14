@@ -22,8 +22,7 @@ conectarDB();
 const authRoutes = require("./rutas/routes");
 app.use("/api/auth", authRoutes);
 
-const carritoRoutes = require("./rutas/carritoRoutes");
-app.use("/api/carrito", carritoRoutes);
+
 
 // 🔹 Iniciar servidor
 const PORT = process.env.PORT || 5000;
