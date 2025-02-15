@@ -1,7 +1,10 @@
 .navStyle {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
+
+
 .linkStyle {
   color: #ad8a1f;
   text-decoration: none;
@@ -12,3 +15,57 @@
 .linkStyle:hover {
   color: #daae29;
 }
+
+
+.user-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.user-icon {
+  font-size: 24px;
+  color: #daae29;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px; 
+  right: 0;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 5px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 120px; 
+  text-align: center;
+  z-index: 100;
+  display: none; 
+}
+
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px; 
+  color: black;
+  padding: 6px; 
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-menu button:hover {
+  color: #daae29;
+  background: rgba(218, 174, 41, 0.1);
+}
+

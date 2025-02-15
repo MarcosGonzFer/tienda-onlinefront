@@ -3,80 +3,61 @@ import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Compra.css";
+import { useEffect, useState } from "react";
 
-function Compra() {
-  const productos = [
-    {
-      src: "imagenes/louisvuitton.png",
-      nombre: "Nike Air Max",
-      precio: "6635.95,00€",
-      cantidad: 1,
-    },
-    {
-      src: "imagenes/nike_travisscott.png",
-      nombre: "Nike Travis Scott",
-      precio: "3608,00€",
-      cantidad: 2,
-    },
-  ];
+const Compra = () => {
+  const [zapatillas, setZapatillas] = useState([]);
 
-  const total = productos.reduce(
-    (acc, producto) =>
-      acc +
-      parseFloat(producto.precio.replace("€", "").replace(",", ".")) *
-        producto.cantidad,
-    0
-  );
+  useEffect(() => {
+    fetch("http://localhost:5000/api/zapatillas")  // 🔹 Nueva URL para obtener zapatillas
+      .then((res) => res.json())
+      .then((data) => setZapatillas(data))
+      .catch((err) => console.error("Error cargando las zapatillas:", err));
+  }, []);
+
+  const confirmarCompra = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/confirmar-compra", {
+        method: "POST",
+      });
+
+      if (!response.ok) throw new Error("Error al confirmar la compra");
+
+      alert("¡Compra confirmada con éxito!");
+      setZapatillas([]); 
+    } catch (err) {
+      alert("Error: " + err.message);
+    }
+  };
 
   return (
     <div>
       <Header />
       <Nav />
-      <div className="compra-container">
-        <div className="compra-left">
-          <h2>Productos en tu carrito</h2>
-          {productos.map((producto, index) => (
-            <div key={index} className="producto">
-              <img src={producto.src} alt={producto.nombre} />
-              <div>
-                <h3>{producto.nombre}</h3>
-                <p>
-                  {producto.precio} x {producto.cantidad}
-                </p>
-              </div>
+      <h2>Tu Compra</h2>
+      {zapatillas.length === 0 ? (
+        <p>No hay productos en tu carrito.</p>
+      ) : (
+        <div className="cart-list">
+          {zapatillas.map((item) => (
+            <div key={item.id} className="cart-item">
+              <img src={item.imagen} alt={item.nombre} className="cart-image" />
+              <h3>{item.nombre}</h3>
+              <p>Precio: ${item.precio}</p>
             </div>
           ))}
+          <button 
+            onClick={confirmarCompra} 
+            className="btn btn-success"
+          >
+            Confirmar Compra
+          </button>
         </div>
-        <div className="compra-right">
-          <h2>Resumen de Compra</h2>
-          <form>
-            <div className="campo">
-              <label htmlFor="direccion">Dirección de envío</label>
-              <input
-                type="text"
-                id="direccion"
-                placeholder="Introduce tu dirección"
-              />
-            </div>
-            <div className="campo">
-              <label htmlFor="metodo-pago">Método de pago</label>
-              <select id="metodo-pago">
-                <option value="tarjeta">Tarjeta de crédito</option>
-                <option value="paypal">PayPal</option>
-              </select>
-            </div>
-            <div className="total">
-              <p>Total a pagar: {total.toFixed(2)}€</p>
-            </div>
-            <button type="submit" className="btn-compra">
-              Confirmar compra
-            </button>
-          </form>
-        </div>
-      </div>
+      )}
       <Footer />
     </div>
   );
-}
+};
 
 export default Compra;
+
