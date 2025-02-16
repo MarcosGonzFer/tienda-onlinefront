@@ -19,7 +19,24 @@ function Zapatilla() {
 
   if (!producto) return <p>Cargando...</p>;
 
-  const tallas = ["38", "39", "40", "41", "42"]; // Tallas manuales
+  const tallas = ["38", "39", "40", "41", "42"]; 
+
+  const agregarAlCarrito = () => {
+    if (!tallaSeleccionada) return;
+
+    const productoConTalla = { ...producto, talla: tallaSeleccionada };
+
+  
+    const carritoActual = JSON.parse(localStorage.getItem("carrito")) || [];
+
+   
+    carritoActual.push(productoConTalla);
+
+   
+    localStorage.setItem("carrito", JSON.stringify(carritoActual));
+
+    alert(`Producto agregado con talla ${tallaSeleccionada}`);
+  };
 
   return (
     <>
@@ -48,7 +65,7 @@ function Zapatilla() {
           </div>
         </div>
 
-        <button className="boton-comprar" disabled={!tallaSeleccionada}>
+        <button className="boton-comprar" disabled={!tallaSeleccionada}  onClick={agregarAlCarrito}>
           Comprar
         </button>
       </div>
