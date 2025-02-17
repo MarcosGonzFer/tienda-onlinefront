@@ -1,38 +1,34 @@
-.colaboraciones-tienda-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1240px;
-    margin: 20px auto;
-}
-
-.colaboraciones-tienda-header h1{
-    background-color: white;
-    width: 300px;
-    text-align: center;
-    color: #ad8a1f;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.lista-zapatillas-tienda {
+.lista-accesorios-tienda {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
+    max-width: 1240px;
+    margin: 10px auto;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
     justify-items: center;
 }
 
-.caja-zapatillas-tienda {
+.accesorios-tienda-header {
+    background-color: white;
+    margin-top: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ad8a1f;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caja-accesorios-tienda {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
     padding: 15px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(250, 250, 250, 0.9);
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -40,19 +36,19 @@
     margin-bottom: 30px;
 }
 
-.caja-zapatillas-tienda:hover {
+.caja-accesorios-tienda:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.caja-zapatillas-tienda img {
+.caja-accesorios-tienda img {
     width: 100%;
     height: 200px;
     object-fit: contain;
     border-radius: 5px;
 }
 
-.caja-zapatillas-tienda h2 {
+.caja-accesorios-tienda h2 {
     font-size: 22px;
     font-weight: bold;
     color: #333;
