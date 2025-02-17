@@ -19,7 +19,7 @@ import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/ListaTiendaColaboraciones';
 import Marca from './componentes/Marca/Marca';
 import Zapatilla from './componentes/Zapatilla/Zapatilla';
-
+import PasarelaPago from './componentes/PasarelaPago/PasarelaPago';
 
 function App() {
   return (
@@ -45,6 +45,7 @@ function App() {
           <Route path="/Marca/:marca" element={<Marca/>} />
           <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
           <Route path="/producto/:id" element={<Zapatilla />} />
+          <Route path="/PasarelaPago" element={<PasarelaPago/>} />
 
           
 
