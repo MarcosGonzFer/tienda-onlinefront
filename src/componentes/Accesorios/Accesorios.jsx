@@ -1,37 +1,47 @@
-import React, { useState, useEffect } from 'react'; // Importar useState y useEffect
-import Nav from '../Nav/Nav';
+import React, { useState, useEffect } from 'react';
 import Header from '../Header/Header';
+import Nav from '../Nav/Nav';
+import './Accesorios.css';
 import Footer from '../Footer/Footer';
-import { Link } from 'react-router-dom';
+import { useProductos } from '../../context/ProductosContext';
 
 function Accesorios() {
-  const [accesorios, setAccesorios] = useState([]); 
+  const { filtro } = useProductos();
+  const [accesorios, setAccesorios] = useState([]);
 
   useEffect(() => {
-   
     fetch('http://localhost:3000/accesorios')
       .then(response => response.json())
-      .then(data => setAccesorios(data)); 
-  }, []); 
+      .then(data => setAccesorios(data))
+      .catch(error => console.error('Error al cargar los accesorios:', error));
+  }, []);
+
+  const accesoriosFiltrados = accesorios.filter(accesorio =>
+    accesorio.label.toLowerCase().includes(filtro.toLowerCase())
+  );
 
   return (
     <div>
       <Header />
       <Nav />
-      <div className="lista-zapatillas-colaboraciones">
-        <div className="colaboraciones">
-          <h1>ACCESORIOS</h1>
+      <div className="accesorios-tienda-container">
+        <div className="accesorios-tienda-header">
+          <h1>Accesorios</h1>
         </div>
-        <div>
-          {accesorios.map((item, index) => (
-            <Link to="/ListaTiendaColaboraciones" key={index} className="caja-zapatillas-colaboraciones">
+        <div className="lista-accesorios-tienda">
+          {accesoriosFiltrados.length > 0 ? (
+            accesoriosFiltrados.map((item, index) => (
+              <div key={index} className="caja-accesorios-tienda">
                 <img src={item.src} alt={item.alt} />
                 <h2>{item.label}</h2>
-                <p className="precio-zapatilla">{item.price}</p>
-            </Link>
-          ))}
+                {item.price && <p className="precio">{item.price}€</p>}
+              </div>
+            ))
+          ) : (
+            <p>No se encontraron accesorios que coincidan con tu búsqueda.</p>
+          )}
         </div>
-        </div>
+      </div>
       <Footer />
     </div>
   );

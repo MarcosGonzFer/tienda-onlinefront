@@ -19,39 +19,37 @@ import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/ListaTiendaColaboraciones';
 import Marca from './componentes/Marca/Marca';
 import Zapatilla from './componentes/Zapatilla/Zapatilla';
-
+import { ProductosProvider } from './context/ProductosContext'; 
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Ofertas" element={<Ofertas />} />
-          <Route path="/Tienda" element={<Tienda />} />
-          <Route path="/Ayuda" element={<Ayuda />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Compra" element={<Compra />}/>
-          <Route path="/Registro" element={<Registro />} />
-          <Route path="/Perdidacontraseña" element={<PerdidaContraseña />} />
-          <Route path="/Hombres" element={<Hombres />} />
-          <Route path="/Mujeres" element={<Mujeres />} /> {}
-          <Route path="/Accesorios" element={<Accesorios />} /> {}
-          <Route path="/SobreNosotros" element={<SobreNosotros/>} />
-          <Route path="/Colaboraciones" element={<Colaboraciones/>} />
-          <Route path="/Contacto" element={<Contacto/>} />
-          <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
-          <Route path="/AvisoLegal" element={<AvisoLegal/>} />
-          <Route path="/Marca/:marca" element={<Marca/>} />
-          <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
-          <Route path="/producto/:id" element={<Zapatilla />} />
-
-          
-
-
-        </Routes>
-      </div>
-    </Router>
+    <ProductosProvider>
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Ofertas" element={<Ofertas />} />
+            <Route path="/Tienda" element={<Tienda />} />
+            <Route path="/Ayuda" element={<Ayuda />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Compra" element={<Compra />}/>
+            <Route path="/Registro" element={<Registro />} />
+            <Route path="/Perdidacontraseña" element={<PerdidaContraseña />} />
+            <Route path="/Hombres" element={<Hombres />} />
+            <Route path="/Mujeres" element={<Mujeres />} />
+            <Route path="/Accesorios" element={<Accesorios />} />
+            <Route path="/SobreNosotros" element={<SobreNosotros/>} />
+            <Route path="/Colaboraciones" element={<Colaboraciones/>} />
+            <Route path="/Contacto" element={<Contacto/>} />
+            <Route path="/PoliticaCookies" element={<PoliticaCookies/>} />
+            <Route path="/AvisoLegal" element={<AvisoLegal/>} />
+            <Route path="/Marca/:marca" element={<Marca/>} />
+            <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
+            <Route path="/producto/:id" element={<Zapatilla />} />
+          </Routes>
+        </div>
+      </Router>
+    </ProductosProvider> 
   );
 }
 
