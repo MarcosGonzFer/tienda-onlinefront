@@ -1,26 +1,22 @@
-import React, { useState } from 'react';
-import './NavBuscador.css';
-import { AiOutlineSearch } from "react-icons/ai";
+import React from 'react';
+import { useProductos } from '../../context/ProductosContext'; // Usar el contexto
 
 function NavBuscador() {
-  const [terminoBusqueda, setTerminoBusqueda] = useState('');
+  const { filtro, setFiltro } = useProductos();  // Acceder al filtro global
 
   const manejarCambio = (e) => {
-    setTerminoBusqueda(e.target.value);
+    setFiltro(e.target.value);  // Actualizar el filtro
   };
 
   return (
     <div className="contenedor-buscador">
-      <div className="input-con-icono">
-        <input
-          type="text"
-          value={terminoBusqueda}
-          onChange={manejarCambio}
-          placeholder="Buscar..."
-          className="input-buscador"
-        />
-        <AiOutlineSearch className="icono-lupa" />
-      </div>
+      <input
+        type="text"
+        value={filtro}  // Mostrar el valor actual del filtro
+        onChange={manejarCambio}  // Actualizar el filtro al escribir
+        placeholder="Buscar..."
+        className="input-buscador"
+      />
     </div>
   );
 }
