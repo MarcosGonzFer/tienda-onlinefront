@@ -4,9 +4,11 @@ import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Compra.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Compra() {
   const [carrito, setCarrito] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Obtener carrito desde localStorage
@@ -14,12 +16,8 @@ function Compra() {
     setCarrito(carritoGuardado);
   }, []);
 
-  const confirmarCompra = () => {
-    alert("¡Compra confirmada! Gracias por tu compra.");
-    
-    // Vaciar el carrito después de la compra
-    localStorage.removeItem("carrito");
-    setCarrito([]);
+  const irAPasarelaPago = () => {
+    navigate("/PasarelaPago"); 
   };
 
   return (
@@ -40,7 +38,7 @@ function Compra() {
               <p><strong>Talla:</strong> {item.talla}</p>
             </div>
           ))}
-          <button onClick={confirmarCompra} className="btn btn-success">
+          <button onClick={irAPasarelaPago} className="btn btn-success">
             Confirmar Compra
           </button>
         </div>

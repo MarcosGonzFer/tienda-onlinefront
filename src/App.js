@@ -19,6 +19,7 @@ import AvisoLegal from './componentes/AvisoLegal/AvisoLegal';
 import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/ListaTiendaColaboraciones';
 import Marca from './componentes/Marca/Marca';
 import Zapatilla from './componentes/Zapatilla/Zapatilla';
+import PasarelaPago from './componentes/PasarelaPago/PasarelaPago';
 import { ProductosProvider } from './context/ProductosContext'; 
 
 function App() {
