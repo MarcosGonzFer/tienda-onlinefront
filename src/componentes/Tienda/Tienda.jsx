@@ -3,6 +3,7 @@ import { useProductos } from '../../context/ProductosContext';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
 import './Tienda.css';
 
 function Tienda() {
@@ -32,11 +33,11 @@ function Tienda() {
         <div className="lista-producto">
           {productosFiltrados.length > 0 ? (
             productosFiltrados.map((item) => (
-              <div key={item.id} className="caja-zapatillas-tienda">
+              <Link key={item.id} to={`/producto/${item.id}`}className="caja-zapatillas-tienda">
                 <img src={item.src} alt={item.alt} />
                 <h2>{item.label}</h2>
                 <p className="precio">{item.price}€</p>
-              </div>
+            </Link>
             ))
           ) : (
             <p>No se encontraron productos que coincidan con tu búsqueda.</p>
