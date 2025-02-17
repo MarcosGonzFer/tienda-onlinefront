@@ -1,80 +1,126 @@
 .compra-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
-}
-
-.compra-left, .compra-right {
-    width: 48%;
-}
-
-.compra-left {
-    padding: 20px;
-    border-right: 1px solid #ccc;
-}
-
-.compra-left h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.producto {
+  }
+  
+  .cart-section {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Estilos de la tarjeta del producto */
+  .cart-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.producto img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-right: 20px;
-}
-
-.compra-right {
+    justify-content: space-between;
+    background: white;
     padding: 20px;
-}
-
-.compra-right h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.campo {
-    margin-bottom: 15px;
-}
-
-.campo label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.campo input, .campo select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.total {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 370px; /* Más grande para que la "X" no cubra el contenido */
+    position: relative;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .cart-image {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .cart-item div {
+    flex: 1;
+    padding-left: 15px;
+  }
+  
+  .cart-item h3 {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
-}
-
-.btn-compra {
-    background-color: #ad8a1f;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item p {
+    font-size: 16px;
+    margin: 3px 0;
+  }
+  
+  .remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .remove-button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Separador entre carrito y formulario */
+  .separato {
+    width: 2px;
+    background-color: #AD8A1F;
+    height: 100%;
+    margin: 0 20px;
+  }
+  
+  /* Estilos del formulario */
+  .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .btn-success {
+    background-color: #AD8A1F;
     color: white;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 12px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-}
-
-.btn-compra:hover {
-    background-color: #8c6a12;
-}
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-success:hover {
+    background-color: #eabd36;
+  }
+  
+  .btn-success:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  

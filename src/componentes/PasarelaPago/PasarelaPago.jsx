@@ -1,18 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from 'react';
+
 function PasarelaPago() {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
+    const [cardHolder, setCardHolder] = useState(""); 
+    const [cardNumber, setCardNumber] = useState("");
+    const [expiryDate, setExpiryDate] = useState("");
+    const [cvv, setCvv] = useState("");
+    const [isFormValid, setIsFormValid] = useState(false);
+    const [paymentMessage, setPaymentMessage] = useState(""); 
+  
+    useEffect(() => {
 
-  const procesarPago = () => {
-    alert("Pago realizado con éxito");
+      const isCardNumberValid = /^\d{4} \d{4} \d{4} \d{4}$/.test(cardNumber);
+      const isExpiryDateValid = /^\d{2}\/\d{2}$/.test(expiryDate);
+      const isCvvValid = /^\d{3}$/.test(cvv);
+  
+     
+      const formValid = isCardNumberValid && isExpiryDateValid && isCvvValid && cardHolder.trim() !== "";
+      setIsFormValid(formValid);
+  
+      console.log("Formulario válido:", formValid); 
+    }, [cardHolder, cardNumber, expiryDate, cvv]);
+  
+    const procesarPago = () => {
+      console.log("Ejecutando procesarPago..."); 
+  
 
+      if (!isFormValid) {
+        setPaymentMessage("Por favor, completa correctamente todos los campos.");
+        return;
+      }
+  
 
-    localStorage.removeItem("carrito");
+      setPaymentMessage("Pago realizado con éxito");
+  
 
-
-    navigate("/compra");
-  };
+      localStorage.removeItem("carrito");
+      navigate("/compra");
+    };
   return (
     <StyledWrapper>
       <div className="modal">
@@ -69,30 +97,94 @@ function PasarelaPago() {
             </button>
           </div>
           <div className="separator">
-            <hr className="line" />
-            <p>or pay using credit card</p>
-            <hr className="line" />
+        <hr className="line" />
+        <p>or pay using credit card</p>
+        <hr className="line" />
+      </div>
+
+
+      <div className="credit-card-info--form">
+
+        <div className="input_container">
+          <label htmlFor="card_holder" className="input_label">Card holder full name</label>
+          <input
+            id="card_holder"
+            className="input_field"
+            type="text"
+            name="card_holder"
+            title="Card holder full name"
+            placeholder="Enter your full name"
+            value={cardHolder}
+            onChange={(e) => setCardHolder(e.target.value)}
+          />
+        </div>
+
+
+        <div className="input_container">
+          <label htmlFor="card_number" className="input_label">Card Number</label>
+          <input
+  id="card_number"
+  className="input_field"
+  type="text"
+  name="card_number"
+  title="Card Number"
+  placeholder="0000 0000 0000 0000"
+  maxLength={19} 
+  value={cardNumber}
+  onChange={(e) => {
+    let value = e.target.value.replace(/\D/g, ""); 
+    value = value.slice(0, 16); 
+    const formattedValue = value.replace(/(\d{4})/g, "$1 ").trim();
+
+    setCardNumber(formattedValue); 
+  }}
+/>
+        </div>
+
+        {/* Fecha de expiración y CVV */}
+        <div className="input_container">
+          <label htmlFor="expiry_date" className="input_label">Expiry Date / CVV</label>
+          <div className="split">
+            {/* Fecha de expiración */}
+            <input
+              id="expiry_date"
+              className="input_field"
+              type="text"
+              name="expiry_date"
+              title="Expiry Date"
+              placeholder="MM/YY"
+              maxLength={5}
+              value={expiryDate}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, ""); 
+                if (value.length <= 4) {
+                  const formattedValue = value.replace(/(\d{2})(\d{0,2})/, "$1/$2");
+                  setExpiryDate(formattedValue);
+                }
+              }}
+            />
+            {/* CVV */}
+            <input
+              id="cvv"
+              className="input_field"
+              type="text"
+              name="cvv"
+              title="CVV"
+              placeholder="CVV"
+              maxLength={3}
+              value={cvv}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, ""); 
+                setCvv(value.slice(0, 3)); 
+              }}
+            />
           </div>
-          <div className="credit-card-info--form">
-            <div className="input_container">
-              <label htmlFor="password_field" className="input_label">Card holder full name</label>
-              <input id="password_field" className="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name" />
-            </div>
-            <div className="input_container">
-              <label htmlFor="password_field" className="input_label">Card Number</label>
-              <input id="password_field" className="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000" />
-            </div>
-            <div className="input_container">
-              <label htmlFor="password_field" className="input_label">Expiry Date / CVV</label>
-              <div className="split">
-                <input id="password_field" className="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23" />
-                <input id="password_field" className="input_field" type="number" name="cvv" title="CVV" placeholder="CVV" />
-              </div>
-            </div>
-          </div>
-          <button onClick={procesarPago} className="btn btn-primary">
+        </div>
+</div>
+          <button onClick={procesarPago} disabled={!isFormValid} className="btn btn-primary">
         Pagar
       </button>
+      {paymentMessage && <p>{paymentMessage}</p>}
         </form>
       </div>
     </StyledWrapper>
@@ -239,7 +331,7 @@ const StyledWrapper = styled.div`
     box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
   }
 
-  /* Reset input number styles */
+
   .input_field::-webkit-outer-spin-button,
   .input_field::-webkit-inner-spin-button {
     -webkit-appearance: none;
