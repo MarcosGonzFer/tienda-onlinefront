@@ -23,6 +23,7 @@ function Links() {
     <div className="navStyle">
       <Link to="/Ofertas" className="linkStyle">Ofertas</Link>
       <Link to="/Tienda" className="linkStyle">Tienda</Link>
+      <Link to="/Verificacion" className="linkStyle">Verificacion</Link>
       <Link to="/Ayuda" className="linkStyle">Ayuda</Link>
 
       {userLoggedIn ? (

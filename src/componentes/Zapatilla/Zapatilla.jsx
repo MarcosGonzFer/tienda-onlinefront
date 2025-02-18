@@ -4,6 +4,7 @@ import "./Zapatilla.css";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
+import { FiCopy } from "react-icons/fi";
 
 function Zapatilla() {
   const { id } = useParams();
@@ -19,23 +20,25 @@ function Zapatilla() {
 
   if (!producto) return <p>Cargando...</p>;
 
-  const tallas = ["38", "39", "40", "41", "42"]; 
+  const tallas = ["38", "39", "40", "41", "42"];
 
   const agregarAlCarrito = () => {
     if (!tallaSeleccionada) return;
 
     const productoConTalla = { ...producto, talla: tallaSeleccionada };
 
-  
     const carritoActual = JSON.parse(localStorage.getItem("carrito")) || [];
 
-   
     carritoActual.push(productoConTalla);
 
-   
     localStorage.setItem("carrito", JSON.stringify(carritoActual));
 
     alert(`Producto agregado con talla ${tallaSeleccionada}`);
+  };
+
+  const copiarCodigo = () => {
+    navigator.clipboard.writeText(producto.verification);
+    alert("Código de verificación copiado!");
   };
 
   return (
@@ -48,8 +51,13 @@ function Zapatilla() {
         <p className="precio">
           Precio: <span>{producto.price}</span>
         </p>
+        <p className="verificacion">
+          Código de Verificación: {producto.verification}
+          <button className="boton-copiar" onClick={copiarCodigo}>
+            <FiCopy />
+          </button>
+        </p>
 
-        {/* Selección de tallas */}
         <div className="tallas">
           <p>Selecciona tu talla:</p>
           <div className="tallas-grid">
@@ -65,7 +73,7 @@ function Zapatilla() {
           </div>
         </div>
 
-        <button className="boton-comprar" disabled={!tallaSeleccionada}  onClick={agregarAlCarrito}>
+        <button className="boton-comprar" disabled={!tallaSeleccionada} onClick={agregarAlCarrito}>
           Comprar
         </button>
       </div>

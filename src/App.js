@@ -20,6 +20,7 @@ import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/L
 import Marca from './componentes/Marca/Marca';
 import Zapatilla from './componentes/Zapatilla/Zapatilla';
 import PasarelaPago from './componentes/PasarelaPago/PasarelaPago';
+import Verificacion from './componentes/Verificacion/Verificacion';
 import { ProductosProvider } from './context/ProductosContext'; 
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
             <Route path="/Marca/:marca" element={<Marca/>} />
             <Route path="/ListaTiendaColaboraciones" element={<ListaTiendaColaboraciones/>} />
             <Route path="/producto/:id" element={<Zapatilla />} />
+            <Route path="/PasarelaPago" element={<PasarelaPago />} />
+            <Route path='/Verificacion' element={<Verificacion />} />
           </Routes>
         </div>
       </Router>
