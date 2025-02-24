@@ -20,6 +20,7 @@ import ListaTiendaColaboraciones from './componentes/ListaTiendaColaboraciones/L
 import Marca from './componentes/Marca/Marca';
 import Zapatilla from './componentes/Zapatilla/Zapatilla';
 import PasarelaPago from './componentes/PasarelaPago/PasarelaPago';
+import Verificacion from './componentes/Verificacion/Verificacion';
 import { ProductosProvider } from './context/ProductosContext'; 
 import ZapatillaHombre from './componentes/Zapatilla_Hombre/Zapatilla_Hombre';
 import ZapatillaMujer from './componentes/Zapatilla_Mujer/Zapatilla_Mujer';
@@ -52,7 +53,8 @@ function App() {
             <Route path="/PasarelaPago" element={<PasarelaPago />} />
             <Route path="/hombres_zapatillas/:id" element={<ZapatillaHombre />} />
             <Route path="/mujeres_zapatillas/:id" element={<ZapatillaMujer />} />
-   
+            <Route path='/Verificacion' element={<Verificacion />} />
+
           </Routes>
         </div>
       </Router>

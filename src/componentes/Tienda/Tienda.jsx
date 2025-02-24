@@ -36,7 +36,7 @@ function Tienda() {
               <Link key={item.id} to={`/producto/${item.id}`}className="caja-zapatillas-tienda">
                 <img src={item.src} alt={item.alt} />
                 <h2>{item.label}</h2>
-                <p className="precio">{item.price}€</p>
+                <p className="precio">{item.price}</p>
             </Link>
             ))
           ) : (
