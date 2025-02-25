@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import "./Compra.css";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { AiFillCloseSquare } from "react-icons/ai";
-
+import { useNavigate } from "react-router-dom";
 
 function Compra() {
   const [carrito, setCarrito] = useState([]);
+  const [mostrarMensaje, setMostrarMensaje] = useState(false);
   const [formulario, setFormulario] = useState({
     nombre: "",
     apellidos: "",
     direccion: "",
     apartamento: "",
   });
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -28,7 +28,9 @@ function Compra() {
     setFormulario({ ...formulario, [name]: value });
   };
 
-  const formularioCompleto = Object.values(formulario).every((campo) => campo.trim() !== "");
+  const formularioCompleto = Object.values(formulario).every(
+    (campo) => campo.trim() !== ""
+  );
 
   const eliminarProducto = (index) => {
     const nuevoCarrito = carrito.filter((_, i) => i !== index);
@@ -37,6 +39,13 @@ function Compra() {
   };
 
   const irAPasarelaPago = () => {
+    const token = localStorage.getItem("token"); // Verifica si hay token guardado
+
+    if (!token) {
+      setMostrarMensaje(true);
+      return;
+    }
+
     if (formularioCompleto) {
       navigate("/PasarelaPago");
     }
@@ -53,34 +62,81 @@ function Compra() {
             <p>No hay productos en tu carrito.</p>
           ) : (
             <div className="cart-list">
-            {carrito.map((item, index) => (
-              <div key={index} className="cart-item">
-                <img src={item.src} alt={item.label} className="cart-image" />
-                <div>
-                  <h3>{item.label}</h3>
-                  <p>Precio: ${item.price}</p>
-                  <p><strong>Talla:</strong> {item.talla}</p>
+              {carrito.map((item, index) => (
+                <div key={index} className="cart-item">
+                  <img src={item.src} alt={item.label} className="cart-image" />
+                  <div>
+                    <h3>{item.label}</h3>
+                    <p>Precio: ${item.price}</p>
+                    <p>
+                      <strong>Talla:</strong> {item.talla}
+                    </p>
+                  </div>
+                  <AiFillCloseSquare
+                    className="remove-button"
+                    onClick={() => eliminarProducto(index)}
+                  />
                 </div>
-                <AiFillCloseSquare
-                  className="remove-button"
-                  onClick={() => eliminarProducto(index)}
-                />
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+              ))}
+            </div>
+          )}
+        </div>
         <div className="form-section">
           <h3>Datos de Envío</h3>
           <form>
-            <input type="text" name="nombre" placeholder="Nombre" value={formulario.nombre} onChange={manejarCambio} required />
-            <input type="text" name="apellidos" placeholder="Apellidos" value={formulario.apellidos} onChange={manejarCambio} required />
-            <input type="text" name="direccion" placeholder="Dirección" value={formulario.direccion} onChange={manejarCambio} required />
-            <input type="text" name="apartamento" placeholder="Apartamento (piso, letra)" value={formulario.apartamento} onChange={manejarCambio} required />
-            <button type="button" onClick={irAPasarelaPago} className="btn btn-success" disabled={!formularioCompleto}>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              value={formulario.nombre}
+              onChange={manejarCambio}
+              required
+            />
+            <input
+              type="text"
+              name="apellidos"
+              placeholder="Apellidos"
+              value={formulario.apellidos}
+              onChange={manejarCambio}
+              required
+            />
+            <input
+              type="text"
+              name="direccion"
+              placeholder="Dirección"
+              value={formulario.direccion}
+              onChange={manejarCambio}
+              required
+            />
+            <input
+              type="text"
+              name="apartamento"
+              placeholder="Apartamento (piso, letra)"
+              value={formulario.apartamento}
+              onChange={manejarCambio}
+              required
+            />
+            <button
+              type="button"
+              onClick={irAPasarelaPago}
+              className="btn btn-success"
+              disabled={!formularioCompleto}
+            >
               Confirmar Compra
             </button>
           </form>
+
+          {mostrarMensaje && (
+            <p className="error-message">
+              Debes iniciar sesión para comprar.{" "}
+              <span
+                className="login-link"
+                onClick={() => navigate("/login")}
+              >
+                Log-in
+              </span>
+            </p>
+          )}
         </div>
       </div>
       <Footer />
@@ -89,5 +145,3 @@ function Compra() {
 }
 
 export default Compra;
-
-
