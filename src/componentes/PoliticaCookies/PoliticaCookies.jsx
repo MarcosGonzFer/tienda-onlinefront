@@ -41,7 +41,7 @@ function PoliticaCookies() {
         <p className="parrafo-politica-cookies">
           El usuario puede, en todo momento, retirar el consentimiento para el tratamiento de sus datos, así como ejercer los derechos de
           acceso, rectificación, supresión, oposición, portabilidad y limitación del tratamiento, mediante un escrito dirigido a <strong>Zashop</strong>,
-          C/Goya, 12 1º Izqda, 28001 Madrid, o a la dirección de correo electrónico info@anibaldepablos.com. En caso de que tengamos dudas sobre
+          C/Goya, 121 6º Izqda, 28031 Madrid, o a la dirección de correo electrónico info@zashop.com. En caso de que tengamos dudas sobre
           su identidad, le podremos solicitar copia de su DNI u otro documento identificativo válido, para evitar el acceso a sus datos por parte
           de terceros. Asimismo, puede presentar una reclamación ante la Agencia Española de Protección de Datos.
         </p>
